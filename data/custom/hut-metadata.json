@@ -1,0 +1,730 @@
+[
+  {
+    "hutId": 1,
+    "coordinates": {
+      "latitude": 46.510375935857276,
+      "longitude": 7.771686948073114
+    }
+  },
+  {
+    "hutId": 2,
+    "coordinates": {
+      "latitude": 46.62530361795064,
+      "longitude": 8.096532633857521
+    }
+  },
+  {
+    "hutId": 3,
+    "coordinates": {
+      "latitude": 46.33000996660008,
+      "longitude": 9.65515137487159
+    }
+  },
+  {
+    "hutId": 4,
+    "coordinates": {
+      "latitude": 46.64529107190183,
+      "longitude": 9.875171604971102
+    }
+  },
+  {
+    "hutId": 5,
+    "coordinates": {
+      "latitude": 46.93534950209336,
+      "longitude": 8.692719692885728
+    }
+  },
+  {
+    "hutId": 6,
+    "coordinates": {
+      "latitude": 45.95709409031169,
+      "longitude": 7.81458963499499
+    }
+  },
+  {
+    "hutId": 7,
+    "coordinates": {
+      "latitude": 46.3126629921213,
+      "longitude": 9.611250350913952
+    }
+  },
+  {
+    "hutId": 8,
+    "coordinates": {
+      "latitude": 46.43971850183361,
+      "longitude": 8.514072820351716
+    }
+  },
+  {
+    "hutId": 9,
+    "coordinates": {
+      "latitude": 46.06030224373331,
+      "longitude": 7.935034248618783
+    }
+  },
+  {
+    "hutId": 10,
+    "coordinates": {
+      "latitude": 46.01128698524708,
+      "longitude": 7.417889192487296
+    }
+  },
+  {
+    "hutId": 11,
+    "coordinates": {
+      "latitude": 46.4875089851749,
+      "longitude": 7.69738971947533
+    }
+  },
+  {
+    "hutId": 12,
+    "coordinates": {
+      "latitude": 46.658782530630624,
+      "longitude": 7.873405715791479
+    }
+  },
+  {
+    "hutId": 13,
+    "coordinates": {
+      "latitude": 46.92754084431717,
+      "longitude": 9.080226276409963
+    }
+  },
+  {
+    "hutId": 14,
+    "coordinates": {
+      "latitude": 46.48640927584239,
+      "longitude": 7.830054261984009
+    }
+  },
+  {
+    "hutId": 15,
+    "coordinates": {
+      "latitude": 46.52617921139215,
+      "longitude": 8.172992818891084
+    }
+  },
+  {
+    "hutId": 16,
+    "coordinates": {
+      "latitude": 46.63473992942142,
+      "longitude": 9.004972921136392
+    }
+  },
+  {
+    "hutId": 17,
+    "coordinates": {
+      "latitude": 46.36979483432684,
+      "longitude": 7.339076665436947
+    }
+  },
+  {
+    "hutId": 18,
+    "coordinates": {
+      "latitude": 46.331960895260536,
+      "longitude": 9.709372004948154
+    }
+  },
+  {
+    "hutId": 19,
+    "coordinates": {
+      "latitude": 46.48370338168904,
+      "longitude": 7.741874377371804
+    }
+  },
+  {
+    "hutId": 20,
+    "coordinates": {
+      "latitude": 46.47200718312692,
+      "longitude": 8.526387733548654
+    }
+  },
+  {
+    "hutId": 21,
+    "coordinates": {
+      "latitude": 46.63671362472448,
+      "longitude": 8.668419563353353
+    }
+  },
+  {
+    "hutId": 22,
+    "coordinates": {
+      "latitude": 46.33887204449195,
+      "longitude": 7.215434692033266
+    }
+  },
+  {
+    "hutId": 23,
+    "coordinates": {
+      "latitude": 46.58704878630538,
+      "longitude": 8.28259170407374
+    }
+  },
+  {
+    "hutId": 24,
+    "coordinates": {
+      "latitude": 46.78274689273264,
+      "longitude": 7.906183650351075
+    }
+  },
+  {
+    "hutId": 25,
+    "coordinates": {
+      "latitude": 46.611800270732495,
+      "longitude": 9.902801191180453
+    }
+  },
+  {
+    "hutId": 26,
+    "coordinates": {
+      "latitude": 46.62543722233291,
+      "longitude": 8.690079934762014
+    }
+  },
+  {
+    "hutId": 27,
+    "coordinates": {
+      "latitude": 46.62400579467178,
+      "longitude": 8.216710835066628
+    }
+  },
+  {
+    "hutId": 28,
+    "coordinates": {
+      "latitude": 46.678067479204714,
+      "longitude": 8.37660210587307
+    }
+  },
+  {
+    "hutId": 30,
+    "coordinates": {
+      "latitude": 47.23335388951546,
+      "longitude": 9.37618157643726
+    }
+  },
+  {
+    "hutId": 31,
+    "coordinates": {
+      "latitude": 46.655278470051186,
+      "longitude": 8.169498348686103
+    }
+  },
+  {
+    "hutId": 32,
+    "coordinates": {
+      "latitude": 47.25499831804414,
+      "longitude": 9.42221347673863
+    }
+  },
+  {
+    "hutId": 33,
+    "coordinates": {
+      "latitude": 46.83088788320946,
+      "longitude": 10.132425477897245
+    }
+  },
+  {
+    "hutId": 170,
+    "coordinates": {
+      "latitude": 47.067761506093504,
+      "longitude": 11.702180134502942
+    }
+  },
+  {
+    "hutId": 223,
+    "coordinates": {
+      "latitude": 47.218376452315404,
+      "longitude": 12.768978575837565
+    }
+  },
+  {
+    "hutId": 234,
+    "coordinates": {
+      "latitude": 46.868406825134684,
+      "longitude": 10.116208647811279
+    }
+  },
+  {
+    "hutId": 236,
+    "coordinates": {
+      "latitude": 46.91183301254967,
+      "longitude": 10.00348631892669
+    }
+  },
+  {
+    "hutId": 294,
+    "coordinates": {
+      "latitude": 47.48424261779221,
+      "longitude": 13.290378705652218
+    }
+  },
+  {
+    "hutId": 298,
+    "coordinates": {
+      "latitude": 47.21044141731041,
+      "longitude": 10.53548071687154
+    }
+  },
+  {
+    "hutId": 309,
+    "coordinates": {
+      "latitude": 46.89855962075608,
+      "longitude": 10.036997117884445
+    }
+  },
+  {
+    "hutId": 355,
+    "coordinates": {
+      "latitude": 47.628783938518175,
+      "longitude": 14.63908247677194
+    }
+  },
+  {
+    "hutId": 384,
+    "coordinates": {
+      "latitude": 47.790814804194795,
+      "longitude": 14.255029947598189
+    }
+  },
+  {
+    "hutId": 44,
+    "coordinates": {
+      "latitude": 46.51279419468843,
+      "longitude": 7.810238804663433
+    }
+  },
+  {
+    "hutId": 79,
+    "coordinates": {
+      "latitude": 46.88132255704354,
+      "longitude": 10.066054220853315
+    }
+  },
+  {
+    "hutId": 87,
+    "coordinates": {
+      "latitude": 47.42738231710237,
+      "longitude": 11.421575546063677
+    }
+  },
+  {
+    "hutId": 115,
+    "coordinates": {
+      "latitude": 46.994014979936324,
+      "longitude": 10.888071463082376
+    }
+  },
+  {
+    "hutId": 124,
+    "coordinates": {
+      "latitude": 46.99444485747729,
+      "longitude": 11.217823985712329
+    }
+  },
+  {
+    "hutId": 126,
+    "coordinates": {
+      "latitude": 46.68549199888317,
+      "longitude": 11.274047475192445
+    }
+  },
+  {
+    "hutId": 162,
+    "coordinates": {
+      "latitude": 47.03713928985856,
+      "longitude": 13.679970432078552
+    }
+  },
+  {
+    "hutId": 192,
+    "coordinates": {
+      "latitude": 47.180444257653434,
+      "longitude": 10.204846619339403
+    }
+  },
+  {
+    "hutId": 201,
+    "coordinates": {
+      "latitude": 47.44517862807421,
+      "longitude": 11.820898519046219
+    }
+  },
+  {
+    "hutId": 215,
+    "coordinates": {
+      "latitude": 47.44427244264966,
+      "longitude": 10.514561075248018
+    }
+  },
+  {
+    "hutId": 217,
+    "coordinates": {
+      "latitude": 46.99494764209779,
+      "longitude": 10.215774062477289
+    }
+  },
+  {
+    "hutId": 230,
+    "coordinates": {
+      "latitude": 46.76506198843489,
+      "longitude": 10.711160380172432
+    }
+  },
+  {
+    "hutId": 254,
+    "coordinates": {
+      "latitude": 46.81466409364752,
+      "longitude": 9.026581519930321
+    }
+  },
+  {
+    "hutId": 257,
+    "coordinates": {
+      "latitude": 46.962415149942544,
+      "longitude": 11.708491091695697
+    }
+  },
+  {
+    "hutId": 259,
+    "coordinates": {
+      "latitude": 46.69048734557585,
+      "longitude": 8.485847576983625
+    }
+  },
+  {
+    "hutId": 260,
+    "coordinates": {
+      "latitude": 47.45099225402261,
+      "longitude": 13.683744002618779
+    }
+  },
+  {
+    "hutId": 262,
+    "coordinates": {
+      "latitude": 47.443523454113375,
+      "longitude": 13.61933105343755
+    }
+  },
+  {
+    "hutId": 269,
+    "coordinates": {
+      "latitude": 46.74672493733302,
+      "longitude": 8.521018547205985
+    }
+  },
+  {
+    "hutId": 274,
+    "coordinates": {
+      "latitude": 46.80020474749352,
+      "longitude": 8.575384558793532
+    }
+  },
+  {
+    "hutId": 276,
+    "coordinates": {
+      "latitude": 46.734563745193356,
+      "longitude": 10.435465374303217
+    }
+  },
+  {
+    "hutId": 277,
+    "coordinates": {
+      "latitude": 45.948853837240506,
+      "longitude": 7.067165586755728
+    }
+  },
+  {
+    "hutId": 278,
+    "coordinates": {
+      "latitude": 46.0601916293764,
+      "longitude": 7.653562190986356
+    }
+  },
+  {
+    "hutId": 280,
+    "coordinates": {
+      "latitude": 46.23028159777202,
+      "longitude": 7.134171460911398
+    }
+  },
+  {
+    "hutId": 281,
+    "coordinates": {
+      "latitude": 45.99969969892923,
+      "longitude": 7.043695461796604
+    }
+  },
+  {
+    "hutId": 283,
+    "coordinates": {
+      "latitude": 47.143080418169816,
+      "longitude": 11.20869401805591
+    }
+  },
+  {
+    "hutId": 284,
+    "coordinates": {
+      "latitude": 46.52286808308397,
+      "longitude": 11.584380592839898
+    }
+  },
+  {
+    "hutId": 285,
+    "coordinates": {
+      "latitude": 46.708256553037764,
+      "longitude": 11.580227750473744
+    }
+  },
+  {
+    "hutId": 303,
+    "coordinates": {
+      "latitude": 47.025610888466886,
+      "longitude": 11.801137862779465
+    }
+  },
+  {
+    "hutId": 312,
+    "coordinates": {
+      "latitude": 46.60601359192166,
+      "longitude": 8.259323604673508
+    }
+  },
+  {
+    "hutId": 314,
+    "coordinates": {
+      "latitude": 47.03907372212538,
+      "longitude": 9.157289132986243
+    }
+  },
+  {
+    "hutId": 316,
+    "coordinates": {
+      "latitude": 46.950979787987215,
+      "longitude": 13.02755317419459
+    }
+  },
+  {
+    "hutId": 328,
+    "coordinates": {
+      "latitude": 46.643175177394895,
+      "longitude": 12.740167818309269
+    }
+  },
+  {
+    "hutId": 186,
+    "coordinates": {
+      "latitude": 47.246235491832124,
+      "longitude": 13.46592526029137
+    }
+  },
+  {
+    "hutId": 185,
+    "coordinates": {
+      "latitude": 46.66194995019834,
+      "longitude": 12.582146944935428
+    }
+  },
+  {
+    "hutId": 343,
+    "coordinates": {
+      "latitude": 47.829103813961844,
+      "longitude": 13.605430177098272
+    }
+  },
+  {
+    "hutId": 216,
+    "coordinates": {
+      "latitude": 47.2270349885813,
+      "longitude": 11.710249106766552
+    }
+  },
+  {
+    "hutId": 82,
+    "coordinates": {
+      "latitude": 47.35487108954638,
+      "longitude": 11.477117632007474
+    }
+  },
+  {
+    "hutId": 177,
+    "coordinates": {
+      "latitude": 48.131736510287816,
+      "longitude": 16.199357221279893
+    }
+  },
+  {
+    "hutId": 248,
+    "coordinates": {
+      "latitude": 47.80428498322805,
+      "longitude": 13.676615819310392
+    }
+  },
+  {
+    "hutId": 211,
+    "coordinates": {
+      "latitude": 47.678432588839314,
+      "longitude": 14.226853690800729
+    }
+  },
+  {
+    "hutId": 106,
+    "coordinates": {
+      "latitude": 47.63321510298044,
+      "longitude": 13.565791254487547
+    }
+  },
+  {
+    "hutId": 117,
+    "coordinates": {
+      "latitude": 47.530258598453266,
+      "longitude": 14.552922138484913
+    }
+  },
+  {
+    "hutId": 111,
+    "coordinates": {
+      "latitude": 47.48231641838429,
+      "longitude": 13.518878174948721
+    }
+  },
+  {
+    "hutId": 141,
+    "coordinates": {
+      "latitude": 47.46381121096342,
+      "longitude": 12.875442662516578
+    }
+  },
+  {
+    "hutId": 86,
+    "coordinates": {
+      "latitude": 47.189918279041315,
+      "longitude": 9.82744457703771
+    }
+  },
+  {
+    "hutId": 294,
+    "coordinates": {
+      "latitude": 47.48424261779221,
+      "longitude": 13.290378705652218
+    }
+  },
+  {
+    "hutId": 355,
+    "coordinates": {
+      "latitude": 47.62877670758828,
+      "longitude": 14.639103934251489
+    }
+  },
+  {
+    "hutId": 286,
+    "coordinates": {
+      "latitude": 47.58199028764329,
+      "longitude": 10.927235147276454
+    }
+  },
+  {
+    "hutId": 91,
+    "coordinates": {
+      "latitude": 47.02482743136782,
+      "longitude": 9.872664263694498
+    }
+  },
+  {
+    "hutId": 133,
+    "coordinates": {
+      "latitude": 47.0550610871256,
+      "longitude": 12.297878306819102
+    }
+  },
+  {
+    "hutId": 238,
+    "coordinates": {
+      "latitude": 46.85454421753803,
+      "longitude": 10.824143381984896
+    }
+  },
+  {
+    "hutId": 210,
+    "coordinates": {
+      "latitude": 47.64472383994208, 
+      "longitude": 12.098454275869427
+    }
+  },
+  {
+    "hutId": 267,
+    "coordinates": {
+      "latitude": 46.612978729830374,
+      "longitude": 12.86704943031946
+    }
+  },
+  {
+    "hutId": 142,
+    "coordinates": {
+      "latitude": 47.72214056968738,
+      "longitude": 15.515651774362718
+    }
+  },
+  {
+    "hutId": 96,
+    "coordinates": {
+      "latitude": 47.07541144522723, 
+      "longitude": 10.115715690150802
+    }
+  },
+  {
+    "hutId": 122,
+    "coordinates": {
+      "latitude": 47.04410601249855, 
+      "longitude": 11.885900848723196
+    }
+  },
+  {
+    "hutId": 58,
+    "coordinates": {
+      "latitude": 47.123212461579385, 
+      "longitude": 12.392294363401835
+    }
+  },
+  {
+    "hutId": 123,
+    "coordinates": {
+      "latitude": 47.16690580751083, 
+      "longitude": 11.640404278539773
+    }
+  },
+  {
+    "hutId": 109,
+    "coordinates": {
+      "latitude": 46.60564797557237,
+      "longitude": 13.070801821138952
+    }
+  },
+  {
+    "hutId": 98,
+    "coordinates": {
+      "latitude": 47.106135498056204, 
+      "longitude": 10.355779991069614
+    }
+  },
+  {
+    "hutId": 92,
+    "coordinates": {
+      "latitude": 47.05281044481766, 
+      "longitude": 9.728314163090918
+    }
+  },
+  {
+    "hutId": 89,
+    "coordinates": {
+      "latitude": 47.07863666511728,
+      "longitude": 9.783748233595388
+    }
+  },
+  {
+    "hutId": 62,
+    "coordinates": {
+      "latitude": 47.209935471662064, 
+      "longitude": 11.526743359997328
+    }
+  }
+]
