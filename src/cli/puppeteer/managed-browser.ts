@@ -1,4 +1,4 @@
-import * as puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer'
 
 export default async<T> (options: { browser?: puppeteer.Browser, page?: puppeteer.Page }, callback: (context: { browser: puppeteer.Browser, page: puppeteer.Page}) => Promise<T>) => {
   const browser = options.browser ?? await puppeteer.launch({ headless: true })

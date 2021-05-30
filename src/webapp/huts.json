@@ -1,0 +1,3083 @@
+{
+  "huts": [
+    {
+      "id": 408,
+      "name": "Adolf Noßberger Hütte",
+      "countryCode": "AT",
+      "elevation": 2488,
+      "coordinates": {
+        "latitude": 0.00004620145581765914,
+        "longitude": 4.513042528724938
+      }
+    },
+    {
+      "id": 303,
+      "name": "Alpenrose-Hütte Zillertal",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.025610888466886,
+        "longitude": 11.801137862779465
+      },
+      "elevation": 1878
+    },
+    {
+      "id": 63,
+      "name": "Ascher Hütte",
+      "countryCode": "AT",
+      "elevation": 2256,
+      "coordinates": {
+        "latitude": 47.065833,
+        "longitude": 10.504717
+      }
+    },
+    {
+      "id": 235,
+      "name": "Augsburger Hütte",
+      "countryCode": "AT",
+      "elevation": 2298,
+      "coordinates": {
+        "latitude": 47.166389,
+        "longitude": 10.493611
+      }
+    },
+    {
+      "id": 262,
+      "name": "Austriahütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.443523454113375,
+        "longitude": 13.61933105343755
+      },
+      "elevation": 1638
+    },
+    {
+      "id": 174,
+      "name": "Bad Kissinger Hütte",
+      "countryCode": "AT",
+      "elevation": 1788,
+      "coordinates": {
+        "latitude": 47.32067,
+        "longitude": 10.33767
+      }
+    },
+    {
+      "id": 116,
+      "name": "Bamberger Hütte",
+      "countryCode": "AT",
+      "elevation": 1756,
+      "coordinates": {
+        "latitude": 47.308889,
+        "longitude": 12.150556
+      }
+    },
+    {
+      "id": 201,
+      "name": "Bayreuther Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.44517862807421,
+        "longitude": 11.820898519046219
+      },
+      "elevation": 1576
+    },
+    {
+      "id": 99,
+      "name": "Berghaus Au",
+      "countryCode": "AT",
+      "elevation": 824,
+      "coordinates": {
+        "latitude": 47.318,
+        "longitude": 9.963
+      }
+    },
+    {
+      "id": 105,
+      "name": "Berliner Hütte",
+      "countryCode": "AT",
+      "elevation": 2040,
+      "coordinates": {
+        "latitude": 47.02444444444444,
+        "longitude": 11.813055555555556
+      }
+    },
+    {
+      "id": 72,
+      "name": "Bettelwurf Hütte",
+      "countryCode": "AT",
+      "elevation": 2077,
+      "coordinates": {
+        "latitude": 47.33871666666667,
+        "longitude": 11.507266666666666
+      }
+    },
+    {
+      "id": 222,
+      "name": "Biberacher Hütte",
+      "countryCode": "AT",
+      "elevation": 1846,
+      "coordinates": {
+        "latitude": 47.257778,
+        "longitude": 10.028611
+      }
+    },
+    {
+      "id": 181,
+      "name": "Brandenburger Haus",
+      "countryCode": "AT",
+      "elevation": 3277,
+      "coordinates": {
+        "latitude": 46.84445,
+        "longitude": 10.77805
+      }
+    },
+    {
+      "id": 366,
+      "name": "Braunschweiger Hütte",
+      "countryCode": "AT",
+      "elevation": 2759,
+      "coordinates": {
+        "latitude": 46.935,
+        "longitude": 10.909167
+      }
+    },
+    {
+      "id": 143,
+      "name": "Bremer Hütte",
+      "countryCode": "AT",
+      "elevation": 2413,
+      "coordinates": {
+        "latitude": 46.99523527777778,
+        "longitude": 11.263219444444445
+      }
+    },
+    {
+      "id": 210,
+      "name": "Brünnsteinhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.64472383994208,
+        "longitude": 12.098454275869427
+      },
+      "elevation": 1360
+    },
+    {
+      "id": 293,
+      "name": "Carl-von-Stahl-Haus",
+      "countryCode": "AT",
+      "elevation": 1736,
+      "coordinates": {
+        "latitude": 47.57475,
+        "longitude": 13.042617
+      }
+    },
+    {
+      "id": 132,
+      "name": "Clarahütte",
+      "countryCode": "AT",
+      "elevation": 2038,
+      "coordinates": {
+        "latitude": 45.039242991283764,
+        "longitude": 0.41475023642050396
+      }
+    },
+    {
+      "id": 393,
+      "name": "Douglasshütte",
+      "countryCode": "AT",
+      "elevation": 1979,
+      "coordinates": {
+        "latitude": 47.059684,
+        "longitude": 9.754765
+      }
+    },
+    {
+      "id": 294,
+      "name": "Dr.Heinrich-Hackel-Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.48424261779221,
+        "longitude": 13.290378705652218
+      },
+      "elevation": 1550
+    },
+    {
+      "id": 355,
+      "name": "Ennstaler Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.628783938518175,
+        "longitude": 14.63908247677194
+      },
+      "elevation": 1543
+    },
+    {
+      "id": 323,
+      "name": "Erfurter Hütte",
+      "countryCode": "AT",
+      "elevation": 1834
+    },
+    {
+      "id": 133,
+      "name": "Essener und Rostocker Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.0550610871256,
+        "longitude": 12.297878306819102
+      },
+      "elevation": 2208
+    },
+    {
+      "id": 354,
+      "name": "Falkenhütte",
+      "countryCode": "AT",
+      "elevation": 1848
+    },
+    {
+      "id": 383,
+      "name": "Feichtauhütte",
+      "countryCode": "AT",
+      "elevation": 1360,
+      "coordinates": {
+        "latitude": 47.801406,
+        "longitude": 14.31745
+      }
+    },
+    {
+      "id": 316,
+      "name": "Fraganter Schutzhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.950979787987215,
+        "longitude": 13.02755317419459
+      },
+      "elevation": 1810
+    },
+    {
+      "id": 317,
+      "name": "Franz Fischer Hütte",
+      "countryCode": "AT",
+      "elevation": 2020,
+      "coordinates": {
+        "latitude": 47.198611111111106,
+        "longitude": 13.364444444444445
+      }
+    },
+    {
+      "id": 86,
+      "name": "Frassenhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.189918279041315,
+        "longitude": 9.82744457703771
+      },
+      "elevation": 1725
+    },
+    {
+      "id": 97,
+      "name": "Freiburgerhütte",
+      "countryCode": "AT",
+      "elevation": 1918,
+      "coordinates": {
+        "latitude": 47.16277777777778,
+        "longitude": 9.990555555555554
+      }
+    },
+    {
+      "id": 217,
+      "name": "Friedrichshafener Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.99494764209779,
+        "longitude": 10.215774062477289
+      },
+      "elevation": 2138
+    },
+    {
+      "id": 170,
+      "name": "Friesenberghaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.067761506093504,
+        "longitude": 11.702180134502942
+      },
+      "elevation": 2498
+    },
+    {
+      "id": 180,
+      "name": "Furtschaglhaus",
+      "countryCode": "AT",
+      "elevation": 2295
+    },
+    {
+      "id": 169,
+      "name": "Gamshütte",
+      "countryCode": "AT",
+      "elevation": 1921,
+      "coordinates": {
+        "latitude": 47.12972222222222,
+        "longitude": 11.795833333333333
+      }
+    },
+    {
+      "id": 100,
+      "name": "Gaudeamushütte",
+      "countryCode": "AT",
+      "elevation": 1263,
+      "coordinates": {
+        "latitude": 47.549167,
+        "longitude": 12.32445
+      }
+    },
+    {
+      "id": 110,
+      "name": "Geraerhütte",
+      "countryCode": "AT",
+      "elevation": 2324,
+      "coordinates": {
+        "latitude": 47.04333333333333,
+        "longitude": 11.628055555555555
+      }
+    },
+    {
+      "id": 223,
+      "name": "Gleiwitzer Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.218376452315404,
+        "longitude": 12.768978575837565
+      },
+      "elevation": 2176
+    },
+    {
+      "id": 342,
+      "name": "Glorer Hütte",
+      "countryCode": "AT",
+      "elevation": 2561,
+      "coordinates": {
+        "latitude": 47.030833333333334,
+        "longitude": 12.715555555555556
+      }
+    },
+    {
+      "id": 62,
+      "name": "Glungezerhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.209935471662064,
+        "longitude": 11.526743359997328
+      },
+      "elevation": 2610
+    },
+    {
+      "id": 106,
+      "name": "Goiserer Hütte, ÖAV",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.63321510298044,
+        "longitude": 13.565791254487547
+      },
+      "elevation": 1592
+    },
+    {
+      "id": 410,
+      "name": "Gollinghütte",
+      "countryCode": "AT",
+      "elevation": 1643,
+      "coordinates": {
+        "latitude": 47.286423,
+        "longitude": 13.769432
+      }
+    },
+    {
+      "id": 183,
+      "name": "Göppinger Hütte",
+      "countryCode": "AT",
+      "elevation": 2245,
+      "coordinates": {
+        "latitude": 47.214717,
+        "longitude": 10.045833
+      }
+    },
+    {
+      "id": 122,
+      "name": "Greizer Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.04410601249855,
+        "longitude": 11.885900848723196
+      },
+      "elevation": 2227
+    },
+    {
+      "id": 154,
+      "name": "Gruttenhütte",
+      "countryCode": "AT",
+      "elevation": 1620,
+      "coordinates": {
+        "latitude": 46.23603407089188,
+        "longitude": 5.796207712154763
+      }
+    },
+    {
+      "id": 148,
+      "name": "Gufferthütte",
+      "countryCode": "AT",
+      "elevation": 1475,
+      "coordinates": {
+        "latitude": 46.17237686903082,
+        "longitude": 5.799967683111123
+      }
+    },
+    {
+      "id": 260,
+      "name": "Guttenberghaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.45099225402261,
+        "longitude": 13.683744002618779
+      },
+      "elevation": 2164
+    },
+    {
+      "id": 82,
+      "name": "Hallerangerhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.35487108954638,
+        "longitude": 11.477117632007474
+      },
+      "elevation": 1768
+    },
+    {
+      "id": 121,
+      "name": "Hannoverhaus",
+      "countryCode": "AT",
+      "elevation": 2565
+    },
+    {
+      "id": 89,
+      "name": "Heinrich-Hueter-Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.07863666511728,
+        "longitude": 9.783748233595388
+      },
+      "elevation": 1766
+    },
+    {
+      "id": 152,
+      "name": "Heinrich-Schwaiger-Haus",
+      "countryCode": "AT",
+      "elevation": 2802,
+      "coordinates": {
+        "latitude": 47.162783,
+        "longitude": 12.738883
+      }
+    },
+    {
+      "id": 306,
+      "name": "Hesshütte",
+      "countryCode": "AT",
+      "elevation": 1699,
+      "coordinates": {
+        "latitude": 47.56117384735504,
+        "longitude": 8.652194079229124
+      }
+    },
+    {
+      "id": 377,
+      "name": "Hexenseehütte",
+      "countryCode": "AT",
+      "elevation": 2588,
+      "coordinates": {
+        "latitude": 47.01883333333333,
+        "longitude": 10.481166666666667
+      }
+    },
+    {
+      "id": 142,
+      "name": "Hinteralmhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.72214056968738,
+        "longitude": 15.515651774362718
+      },
+      "elevation": 1442
+    },
+    {
+      "id": 343,
+      "name": "Hochleckenhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.829103813961844,
+        "longitude": 13.605430177098272
+      },
+      "elevation": 1572
+    },
+    {
+      "id": 384,
+      "name": "Hochsengsbiwak",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.790814804194795,
+        "longitude": 14.255029947598189
+      },
+      "elevation": 1583
+    },
+    {
+      "id": 328,
+      "name": "Hochweißsteinhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.643175177394895,
+        "longitude": 12.740167818309269
+      },
+      "elevation": 1868
+    },
+    {
+      "id": 111,
+      "name": "Hofpürglhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.48231641838429,
+        "longitude": 13.518878174948721
+      },
+      "elevation": 1703
+    },
+    {
+      "id": 144,
+      "name": "Ingolstädter Haus",
+      "countryCode": "AT",
+      "elevation": 2119,
+      "coordinates": {
+        "latitude": 47.50168333333333,
+        "longitude": 12.887083333333333
+      }
+    },
+    {
+      "id": 320,
+      "name": "Innsbrucker Hütte",
+      "countryCode": "AT",
+      "elevation": 2369,
+      "coordinates": {
+        "latitude": 47.043137,
+        "longitude": 11.310835
+      }
+    },
+    {
+      "id": 95,
+      "name": "Kaltenberghütte",
+      "countryCode": "AT",
+      "elevation": 2089
+    },
+    {
+      "id": 177,
+      "name": "Kampthalerhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 48.131736510287816,
+        "longitude": 16.199357221279893
+      },
+      "elevation": 313
+    },
+    {
+      "id": 203,
+      "name": "Karl-von-Edel-Hütte",
+      "countryCode": "AT",
+      "elevation": 2238,
+      "coordinates": {
+        "latitude": 47.13055,
+        "longitude": 11.8975
+      }
+    },
+    {
+      "id": 87,
+      "name": "Karwendelhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.42738231710237,
+        "longitude": 11.421575546063677
+      },
+      "elevation": 1765
+    },
+    {
+      "id": 178,
+      "name": "Kasseler Hütte",
+      "countryCode": "AT",
+      "elevation": 2177,
+      "coordinates": {
+        "latitude": 47.05916666666666,
+        "longitude": 11.948333333333334
+      }
+    },
+    {
+      "id": 271,
+      "name": "Kaunergrathütte",
+      "countryCode": "AT",
+      "elevation": 2817,
+      "coordinates": {
+        "latitude": 46.993889,
+        "longitude": 10.806944
+      }
+    },
+    {
+      "id": 415,
+      "name": "Kellerjochhütte",
+      "countryCode": "AT",
+      "elevation": 2237
+    },
+    {
+      "id": 79,
+      "name": "Klostertaler Umwelthütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.88132255704354,
+        "longitude": 10.066054220853315
+      },
+      "elevation": 2362
+    },
+    {
+      "id": 149,
+      "name": "Knorrhütte",
+      "countryCode": "AT",
+      "elevation": 2051,
+      "coordinates": {
+        "latitude": 47.40997222222222,
+        "longitude": 11.012527777777779
+      }
+    },
+    {
+      "id": 292,
+      "name": "Kürsingerhütte",
+      "countryCode": "AT",
+      "elevation": 2558,
+      "coordinates": {
+        "latitude": 47.1227273293776,
+        "longitude": 6.299933265375026
+      }
+    },
+    {
+      "id": 437,
+      "name": "Lamsenjochhütte",
+      "countryCode": "AT",
+      "elevation": 1953
+    },
+    {
+      "id": 215,
+      "name": "Landsberger Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.44427244264966,
+        "longitude": 10.514561075248018
+      },
+      "elevation": 1810
+    },
+    {
+      "id": 297,
+      "name": "Lindauer Hütte",
+      "countryCode": "AT",
+      "elevation": 1744,
+      "coordinates": {
+        "latitude": 47.03444444444444,
+        "longitude": 9.835555555555556
+      }
+    },
+    {
+      "id": 123,
+      "name": "Lizumerhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.16690580751083,
+        "longitude": 11.640404278539773
+      },
+      "elevation": 2019
+    },
+    {
+      "id": 140,
+      "name": "Memminger Hütte",
+      "countryCode": "AT",
+      "elevation": 2242
+    },
+    {
+      "id": 273,
+      "name": "Millstätter Hütte",
+      "countryCode": "AT",
+      "elevation": 1880,
+      "coordinates": {
+        "latitude": 46.84820942319721,
+        "longitude": 7.5940081112887174
+      }
+    },
+    {
+      "id": 117,
+      "name": "Mödlinger Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.530258598453266,
+        "longitude": 14.552922138484913
+      },
+      "elevation": 1523
+    },
+    {
+      "id": 160,
+      "name": "Muttekopfhütte",
+      "countryCode": "AT",
+      "elevation": 1934,
+      "coordinates": {
+        "latitude": 47.26262289400704,
+        "longitude": 10.669631894431426
+      }
+    },
+    {
+      "id": 162,
+      "name": "Neue Bonner Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.03713928985856,
+        "longitude": 13.679970432078552
+      },
+      "elevation": 1712
+    },
+    {
+      "id": 385,
+      "name": "Neue Fürther Hütte",
+      "countryCode": "AT",
+      "elevation": 2201,
+      "coordinates": {
+        "latitude": 47.1654,
+        "longitude": 12.4245
+      }
+    },
+    {
+      "id": 129,
+      "name": "Neue Magdeburger Hütte",
+      "countryCode": "AT",
+      "elevation": 1633,
+      "coordinates": {
+        "latitude": 47.288944,
+        "longitude": 11.296524
+      }
+    },
+    {
+      "id": 58,
+      "name": "Neue Prager Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.123212461579385,
+        "longitude": 12.392294363401835
+      },
+      "elevation": 2796
+    },
+    {
+      "id": 275,
+      "name": "Neue Regensburger Hütte",
+      "countryCode": "AT",
+      "elevation": 2286,
+      "coordinates": {
+        "latitude": 47.054626,
+        "longitude": 11.198436
+      }
+    },
+    {
+      "id": 96,
+      "name": "Neue Reutlinger Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.07541144522723,
+        "longitude": 10.115715690150802
+      },
+      "elevation": 2395
+    },
+    {
+      "id": 237,
+      "name": "Neue Thüringer Hütte",
+      "countryCode": "AT",
+      "elevation": 2240,
+      "coordinates": {
+        "latitude": 47.172778,
+        "longitude": 12.383333
+      }
+    },
+    {
+      "id": 319,
+      "name": "Niedersachsenhaus",
+      "countryCode": "AT",
+      "elevation": 2471,
+      "coordinates": {
+        "latitude": 47.060278,
+        "longitude": 13.010278
+      }
+    },
+    {
+      "id": 202,
+      "name": "Nördlinger Hütte",
+      "countryCode": "AT",
+      "elevation": 2238,
+      "coordinates": {
+        "latitude": 47.22251280623988,
+        "longitude": 3.7410798946125774
+      }
+    },
+    {
+      "id": 124,
+      "name": "Nürnberger Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.99444485747729,
+        "longitude": 11.217823985712329
+      },
+      "elevation": 2297
+    },
+    {
+      "id": 138,
+      "name": "Oberlandhütte",
+      "countryCode": "AT",
+      "elevation": 1014,
+      "coordinates": {
+        "latitude": 47.379583333333336,
+        "longitude": 12.307500000000001
+      }
+    },
+    {
+      "id": 300,
+      "name": "Oberwalderhütte",
+      "countryCode": "AT",
+      "elevation": 2973,
+      "coordinates": {
+        "latitude": 47.1052639385667,
+        "longitude": 6.7155350216529435
+      }
+    },
+    {
+      "id": 268,
+      "name": "Obstanserseehütte",
+      "countryCode": "AT",
+      "elevation": 2304,
+      "coordinates": {
+        "latitude": 46.68444444444444,
+        "longitude": 12.493611111111111
+      }
+    },
+    {
+      "id": 119,
+      "name": "Olpererhütte",
+      "countryCode": "AT",
+      "elevation": 2389,
+      "coordinates": {
+        "latitude": 47.04195,
+        "longitude": 11.688333333333334
+      }
+    },
+    {
+      "id": 232,
+      "name": "Passauer Hütte",
+      "countryCode": "AT",
+      "elevation": 2051,
+      "coordinates": {
+        "latitude": 47.474167,
+        "longitude": 12.750278
+      }
+    },
+    {
+      "id": 141,
+      "name": "Peter-Wiechenthaler-Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.46381121096342,
+        "longitude": 12.875442662516578
+      },
+      "elevation": 1752
+    },
+    {
+      "id": 179,
+      "name": "Pfeishütte",
+      "countryCode": "AT",
+      "elevation": 1922,
+      "coordinates": {
+        "latitude": 47.33006585667449,
+        "longitude": 11.425474610722757
+      }
+    },
+    {
+      "id": 185,
+      "name": "Porzehütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.66194995019834,
+        "longitude": 12.582146944935428
+      },
+      "elevation": 1942
+    },
+    {
+      "id": 283,
+      "name": "Potsdamer Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.143080418169816,
+        "longitude": 11.20869401805591
+      },
+      "elevation": 2020
+    },
+    {
+      "id": 402,
+      "name": "Preintalerhütte",
+      "countryCode": "AT",
+      "elevation": 1656
+    },
+    {
+      "id": 336,
+      "name": "Prielschutzhaus",
+      "countryCode": "AT",
+      "elevation": 1420,
+      "coordinates": {
+        "latitude": 47.704883333333335,
+        "longitude": 14.082083333333333
+      }
+    },
+    {
+      "id": 205,
+      "name": "Rastkogelhütte",
+      "countryCode": "AT",
+      "elevation": 2124,
+      "coordinates": {
+        "latitude": 47.231944444444444,
+        "longitude": 11.788333333333334
+      }
+    },
+    {
+      "id": 248,
+      "name": "Rieder Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.80428498322805,
+        "longitude": 13.676615819310392
+      },
+      "elevation": 1765
+    },
+    {
+      "id": 145,
+      "name": "Riemannhaus",
+      "countryCode": "AT",
+      "elevation": 2177,
+      "coordinates": {
+        "latitude": 47.45786666666667,
+        "longitude": 12.9147
+      }
+    },
+    {
+      "id": 171,
+      "name": "Riffelseehütte",
+      "countryCode": "AT",
+      "elevation": 2293,
+      "coordinates": {
+        "latitude": 46.961111111111116,
+        "longitude": 10.857222222222221
+      }
+    },
+    {
+      "id": 390,
+      "name": "Rudolf Schober Hütte",
+      "countryCode": "AT",
+      "elevation": 1667,
+      "coordinates": {
+        "latitude": 45.05491269567699,
+        "longitude": 0.41577235956411507
+      }
+    },
+    {
+      "id": 115,
+      "name": "Rüsselsheimer Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.994014979936324,
+        "longitude": 10.888071463082376
+      },
+      "elevation": 2323
+    },
+    {
+      "id": 309,
+      "name": "Saarbrücker Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.89855962075608,
+        "longitude": 10.036997117884445
+      },
+      "elevation": 2538
+    },
+    {
+      "id": 189,
+      "name": "Schwarzwasserhütte",
+      "countryCode": "AT",
+      "elevation": 1621,
+      "coordinates": {
+        "latitude": 47.331111,
+        "longitude": 10.086944
+      }
+    },
+    {
+      "id": 219,
+      "name": "Simonyhütte",
+      "countryCode": "AT",
+      "elevation": 2203,
+      "coordinates": {
+        "latitude": 47.50081206085873,
+        "longitude": 7.623639035593724
+      }
+    },
+    {
+      "id": 57,
+      "name": "Spitzsteinhaus",
+      "countryCode": "AT",
+      "elevation": 1252,
+      "coordinates": {
+        "latitude": 47.70444444444445,
+        "longitude": 12.243333333333332
+      }
+    },
+    {
+      "id": 200,
+      "name": "Straubinger Haus",
+      "countryCode": "AT",
+      "elevation": 1551,
+      "coordinates": {
+        "latitude": 47.620278,
+        "longitude": 12.499444
+      }
+    },
+    {
+      "id": 192,
+      "name": "Stuttgarter Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.180444257653434,
+        "longitude": 10.204846619339403
+      },
+      "elevation": 2310
+    },
+    {
+      "id": 190,
+      "name": "Sudetendeutsche Hütte",
+      "countryCode": "AT",
+      "elevation": 2650,
+      "coordinates": {
+        "latitude": 47.049305555555556,
+        "longitude": 12.576305555555555
+      }
+    },
+    {
+      "id": 186,
+      "name": "Südwiener Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.246235491832124,
+        "longitude": 13.46592526029137
+      },
+      "elevation": 1802
+    },
+    {
+      "id": 231,
+      "name": "Taschachhaus",
+      "countryCode": "AT",
+      "elevation": 2434,
+      "coordinates": {
+        "latitude": 46.90961111111111,
+        "longitude": 10.817555555555556
+      }
+    },
+    {
+      "id": 91,
+      "name": "Tilisunahütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.02482743136782,
+        "longitude": 9.872664263694498
+      },
+      "elevation": 2211
+    },
+    {
+      "id": 163,
+      "name": "Tölzer Hütte am Schafreuter",
+      "countryCode": "AT",
+      "elevation": 1825,
+      "coordinates": {
+        "latitude": 47.504167,
+        "longitude": 11.492778
+      }
+    },
+    {
+      "id": 92,
+      "name": "Totalphütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.05281044481766,
+        "longitude": 9.728314163090918
+      },
+      "elevation": 2385
+    },
+    {
+      "id": 236,
+      "name": "Tübinger Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.91183301254967,
+        "longitude": 10.00348631892669
+      },
+      "elevation": 2193
+    },
+    {
+      "id": 396,
+      "name": "Valentinalm",
+      "countryCode": "AT",
+      "elevation": 1215,
+      "coordinates": {
+        "latitude": 46.6816,
+        "longitude": 13.0097
+      }
+    },
+    {
+      "id": 238,
+      "name": "Vernagthütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.85454421753803,
+        "longitude": 10.824143381984896
+      },
+      "elevation": 2755
+    },
+    {
+      "id": 307,
+      "name": "Vorderkaiserfeldenhütte",
+      "countryCode": "AT",
+      "elevation": 1389
+    },
+    {
+      "id": 216,
+      "name": "Weidener Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.2270349885813,
+        "longitude": 11.710249106766552
+      },
+      "elevation": 1799
+    },
+    {
+      "id": 234,
+      "name": "Wiesbadener Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.868406825134684,
+        "longitude": 10.116208647811279
+      },
+      "elevation": 2443
+    },
+    {
+      "id": 267,
+      "name": "Wolayerseehütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.612978729830374,
+        "longitude": 12.86704943031946
+      },
+      "elevation": 1960
+    },
+    {
+      "id": 372,
+      "name": "Wolfratshauser Hütte",
+      "countryCode": "AT",
+      "elevation": 1752,
+      "coordinates": {
+        "latitude": 47.391,
+        "longitude": 10.8488
+      }
+    },
+    {
+      "id": 298,
+      "name": "Württembergerhaus",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.21044141731041,
+        "longitude": 10.53548071687154
+      },
+      "elevation": 2220
+    },
+    {
+      "id": 253,
+      "name": "Ybbstaler Hütte",
+      "countryCode": "AT",
+      "elevation": 1343,
+      "coordinates": {
+        "latitude": 47.80758333333333,
+        "longitude": 15.025066666666667
+      }
+    },
+    {
+      "id": 211,
+      "name": "Zellerhütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 47.678432588839314,
+        "longitude": 14.226853690800729
+      },
+      "elevation": 1575
+    },
+    {
+      "id": 295,
+      "name": "Zeppezauerhaus",
+      "countryCode": "AT",
+      "elevation": 1663,
+      "coordinates": {
+        "latitude": 47.7245,
+        "longitude": 13.007216666666666
+      }
+    },
+    {
+      "id": 266,
+      "name": "Zittauerhütte",
+      "countryCode": "AT",
+      "elevation": 2328,
+      "coordinates": {
+        "latitude": 47.162586287513676,
+        "longitude": 6.124098776024018
+      }
+    },
+    {
+      "id": 109,
+      "name": "Zollnersee Hütte",
+      "countryCode": "AT",
+      "coordinates": {
+        "latitude": 46.60564797557237,
+        "longitude": 13.070801821138952
+      },
+      "elevation": 1750
+    },
+    {
+      "id": 208,
+      "name": "Almagellerhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2894,
+      "coordinates": {
+        "latitude": 46.10767094808973,
+        "longitude": 8.007701844270786
+      }
+    },
+    {
+      "id": 339,
+      "name": "Alp Rohr Berggasthaus",
+      "countryCode": "CH",
+      "elevation": 1215
+    },
+    {
+      "id": 23,
+      "name": "Bächlitalhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.58704878630538,
+        "longitude": 8.28259170407374
+      },
+      "elevation": 2328
+    },
+    {
+      "id": 21,
+      "name": "Badushütte",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.63671362472448,
+        "longitude": 8.668419563353353
+      },
+      "elevation": 2503
+    },
+    {
+      "id": 349,
+      "name": "Baltschiederklause SAC",
+      "countryCode": "CH",
+      "elevation": 2783,
+      "coordinates": {
+        "latitude": 46.3949880250311,
+        "longitude": 7.889795088890362
+      }
+    },
+    {
+      "id": 347,
+      "name": "Berghaus Alpenrösli",
+      "countryCode": "CH",
+      "elevation": 1776
+    },
+    {
+      "id": 52,
+      "name": "Berghaus Männdlenen",
+      "countryCode": "CH",
+      "elevation": 2344,
+      "coordinates": {
+        "latitude": 46.66892827737121,
+        "longitude": 7.968787710464482
+      }
+    },
+    {
+      "id": 161,
+      "name": "Berglihütte SAC",
+      "countryCode": "CH",
+      "elevation": 3299,
+      "coordinates": {
+        "latitude": 46.56675400841553,
+        "longitude": 8.020481790207784
+      }
+    },
+    {
+      "id": 254,
+      "name": "Bifertenhütte AACB",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.81466409364752,
+        "longitude": 9.026581519930321
+      },
+      "elevation": 2482
+    },
+    {
+      "id": 264,
+      "name": "Binntalhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2267,
+      "coordinates": {
+        "latitude": 46.37468455999608,
+        "longitude": 8.291885562953947
+      }
+    },
+    {
+      "id": 288,
+      "name": "Bivouac de l'Envers des Dorées",
+      "countryCode": "CH",
+      "elevation": 2983,
+      "coordinates": {
+        "latitude": 45.979788262019014,
+        "longitude": 7.048728333290744
+      }
+    },
+    {
+      "id": 1,
+      "name": "Blüemlisalphütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.510375935857276,
+        "longitude": 7.771686948073114
+      },
+      "elevation": 2840
+    },
+    {
+      "id": 156,
+      "name": "Bordierhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2886,
+      "coordinates": {
+        "latitude": 46.144518844024816,
+        "longitude": 7.849805945093015
+      }
+    },
+    {
+      "id": 9,
+      "name": "Britanniahütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.06030224373331,
+        "longitude": 7.935034248618783
+      },
+      "elevation": 3030
+    },
+    {
+      "id": 206,
+      "name": "Brochhütte",
+      "countryCode": "CH",
+      "elevation": 1499,
+      "coordinates": {
+        "latitude": 46.680514710941345,
+        "longitude": 8.138950611073186
+      }
+    },
+    {
+      "id": 37,
+      "name": "Brunnihütte SAC",
+      "countryCode": "CH",
+      "elevation": 1860,
+      "coordinates": {
+        "latitude": 46.840903030557264,
+        "longitude": 8.4105766746385
+      }
+    },
+    {
+      "id": 67,
+      "name": "Cabane Barraud",
+      "countryCode": "CH",
+      "elevation": 1956
+    },
+    {
+      "id": 413,
+      "name": "Cabane de Balavaux",
+      "countryCode": "CH",
+      "elevation": 2042,
+      "coordinates": {
+        "latitude": 46.157,
+        "longitude": 7.278
+      }
+    },
+    {
+      "id": 379,
+      "name": "Cabane de Chanrion CAS",
+      "countryCode": "CH",
+      "elevation": 2462,
+      "coordinates": {
+        "latitude": 45.939190361234594,
+        "longitude": 7.380927408508771
+      }
+    },
+    {
+      "id": 277,
+      "name": "Cabane de l'A Neuve CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 45.948853837240506,
+        "longitude": 7.067165586755728
+      },
+      "elevation": 2735
+    },
+    {
+      "id": 436,
+      "name": "Cabane de la Dent Blanche CAS",
+      "countryCode": "CH",
+      "elevation": 3507,
+      "coordinates": {
+        "latitude": 46.020237665912305,
+        "longitude": 7.60087805579504
+      }
+    },
+    {
+      "id": 22,
+      "name": "Cabane des Diablerets CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.33887204449195,
+        "longitude": 7.215434692033266
+      },
+      "elevation": 2485
+    },
+    {
+      "id": 10,
+      "name": "Cabane des Dix CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.01128698524708,
+        "longitude": 7.417889192487296
+      },
+      "elevation": 2928
+    },
+    {
+      "id": 226,
+      "name": "Cabane des Vignettes CAS",
+      "countryCode": "CH",
+      "elevation": 3160,
+      "coordinates": {
+        "latitude": 45.98981696258426,
+        "longitude": 7.47568652726427
+      }
+    },
+    {
+      "id": 333,
+      "name": "Cabane du Fenestral",
+      "countryCode": "CH",
+      "elevation": 2453,
+      "coordinates": {
+        "latitude": 46.188924554212825,
+        "longitude": 7.100720400291932
+      }
+    },
+    {
+      "id": 311,
+      "name": "Cabane du Mont d’Or",
+      "countryCode": "CH",
+      "elevation": 1377,
+      "coordinates": {
+        "latitude": 46.72275735608401,
+        "longitude": 6.3605212693553685
+      }
+    },
+    {
+      "id": 278,
+      "name": "Cabane du Mountet CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.0601916293764,
+        "longitude": 7.653562190986356
+      },
+      "elevation": 2886
+    },
+    {
+      "id": 281,
+      "name": "Cabane du Trient CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 45.99969969892923,
+        "longitude": 7.043695461796604
+      },
+      "elevation": 3170
+    },
+    {
+      "id": 394,
+      "name": "Cabane d’Essertze",
+      "countryCode": "CH",
+      "elevation": 2191,
+      "coordinates": {
+        "latitude": 46.14797018018678,
+        "longitude": 7.37174647980615
+      }
+    },
+    {
+      "id": 280,
+      "name": "Cabane Rambert CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.23028159777202,
+        "longitude": 7.134171460911398
+      },
+      "elevation": 2580
+    },
+    {
+      "id": 176,
+      "name": "Calandahütte SAC",
+      "countryCode": "CH",
+      "elevation": 2073,
+      "coordinates": {
+        "latitude": 46.88300725258208,
+        "longitude": 9.482225014159361
+      }
+    },
+    {
+      "id": 26,
+      "name": "Camona da Maighels CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.62543722233291,
+        "longitude": 8.690079934762014
+      },
+      "elevation": 2310
+    },
+    {
+      "id": 240,
+      "name": "Camona da Punteglias CAS",
+      "countryCode": "CH",
+      "elevation": 2311,
+      "coordinates": {
+        "latitude": 46.77719428018575,
+        "longitude": 8.95608216444674
+      }
+    },
+    {
+      "id": 42,
+      "name": "Capanna Adula CAS",
+      "countryCode": "CH",
+      "elevation": 2012,
+      "coordinates": {
+        "latitude": 46.49910172321658,
+        "longitude": 8.995795768779065
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capanna Basòdino (Robiei) CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.43971850183361,
+        "longitude": 8.514072820351716
+      },
+      "elevation": 1856
+    },
+    {
+      "id": 49,
+      "name": "Capanna Bovarina",
+      "countryCode": "CH",
+      "elevation": 1870,
+      "coordinates": {
+        "latitude": 46.5604293006405,
+        "longitude": 8.88955929497006
+      }
+    },
+    {
+      "id": 34,
+      "name": "Capanna Cadlimo CAS",
+      "countryCode": "CH",
+      "elevation": 2570,
+      "coordinates": {
+        "latitude": 46.57155931704994,
+        "longitude": 8.69521336043972
+      }
+    },
+    {
+      "id": 36,
+      "name": "Capanna Campo Tencia CAS",
+      "countryCode": "CH",
+      "elevation": 2140,
+      "coordinates": {
+        "latitude": 46.444193304692604,
+        "longitude": 8.732738937864356
+      }
+    },
+    {
+      "id": 197,
+      "name": "Capanna Corno-Gries CAS",
+      "countryCode": "CH",
+      "elevation": 2338,
+      "coordinates": {
+        "latitude": 46.4670260363884,
+        "longitude": 8.409994364013325
+      }
+    },
+    {
+      "id": 20,
+      "name": "Capanna Cristallina CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.47200718312692,
+        "longitude": 8.526387733548654
+      },
+      "elevation": 2575
+    },
+    {
+      "id": 198,
+      "name": "Capanna d'Alzasca CAS",
+      "countryCode": "CH",
+      "elevation": 1734,
+      "coordinates": {
+        "latitude": 46.27129415233048,
+        "longitude": 8.58929118660784
+      }
+    },
+    {
+      "id": 3,
+      "name": "Capanna da l'Albigna CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.33000996660008,
+        "longitude": 9.65515137487159
+      },
+      "elevation": 2336
+    },
+    {
+      "id": 18,
+      "name": "Capanna del Forno CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.331960895260536,
+        "longitude": 9.709372004948154
+      },
+      "elevation": 2574
+    },
+    {
+      "id": 7,
+      "name": "Capanna di Sciora CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.3126629921213,
+        "longitude": 9.611250350913952
+      },
+      "elevation": 2120
+    },
+    {
+      "id": 291,
+      "name": "Capanna Gorda",
+      "countryCode": "CH",
+      "elevation": 1800,
+      "coordinates": {
+        "latitude": 46.497985528130954,
+        "longitude": 8.910816967633519
+      }
+    },
+    {
+      "id": 168,
+      "name": "Capanna Monte Bar",
+      "countryCode": "CH",
+      "elevation": 1602,
+      "coordinates": {
+        "latitude": 46.09999763945535,
+        "longitude": 9.01376614387527
+      }
+    },
+    {
+      "id": 221,
+      "name": "Capanna Motterascio CAS",
+      "countryCode": "CH",
+      "elevation": 2172,
+      "coordinates": {
+        "latitude": 46.593261993686305,
+        "longitude": 9.005424655408886
+      }
+    },
+    {
+      "id": 399,
+      "name": "Capanna Piansecco CAS",
+      "countryCode": "CH",
+      "elevation": 1982
+    },
+    {
+      "id": 419,
+      "name": "Capanna Poncione di Braga",
+      "countryCode": "CH",
+      "elevation": 2003,
+      "coordinates": {
+        "latitude": 46.42886035253221,
+        "longitude": 8.572335985647722
+      }
+    },
+    {
+      "id": 38,
+      "name": "Capanna Sasc Furä CAS",
+      "countryCode": "CH",
+      "elevation": 1904,
+      "coordinates": {
+        "latitude": 46.315321953657815,
+        "longitude": 9.582435311321223
+      }
+    },
+    {
+      "id": 135,
+      "name": "Capanna Scaletta",
+      "countryCode": "CH",
+      "elevation": 2205,
+      "coordinates": {
+        "latitude": 46.60763236195504,
+        "longitude": 8.940565455281869
+      }
+    },
+    {
+      "id": 435,
+      "name": "Capanna Tomeo",
+      "countryCode": "CH",
+      "elevation": 1739,
+      "coordinates": {
+        "latitude": 46.36612684033035,
+        "longitude": 8.688718863635032
+      }
+    },
+    {
+      "id": 46,
+      "name": "Carschinahütte SAC",
+      "countryCode": "CH",
+      "elevation": 2236,
+      "coordinates": {
+        "latitude": 47.00699235721726,
+        "longitude": 9.827269787807897
+      }
+    },
+    {
+      "id": 60,
+      "name": "Chalet de Roseyres",
+      "countryCode": "CH",
+      "elevation": 1690,
+      "coordinates": {
+        "latitude": 46.35990715002811,
+        "longitude": 7.195672280729789
+      }
+    },
+    {
+      "id": 255,
+      "name": "Chalet du Hohberg",
+      "countryCode": "CH",
+      "elevation": 1468,
+      "coordinates": {
+        "latitude": 46.6757775968608,
+        "longitude": 7.3357180351662405
+      }
+    },
+    {
+      "id": 68,
+      "name": "Chalet Lacombe",
+      "countryCode": "CH",
+      "elevation": 1653,
+      "coordinates": {
+        "latitude": 46.3884424073459,
+        "longitude": 7.043210034023342
+      }
+    },
+    {
+      "id": 386,
+      "name": "Chamanna Coaz CAS",
+      "countryCode": "CH",
+      "elevation": 2610,
+      "coordinates": {
+        "latitude": 46.383684654758554,
+        "longitude": 9.835467730695683
+      }
+    },
+    {
+      "id": 25,
+      "name": "Chamanna d'Es-cha CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.611800270732495,
+        "longitude": 9.902801191180453
+      },
+      "elevation": 2594
+    },
+    {
+      "id": 391,
+      "name": "Chamanna da Boval CAS",
+      "countryCode": "CH",
+      "elevation": 2495,
+      "coordinates": {
+        "latitude": 46.41509616641821,
+        "longitude": 9.925224753064489
+      }
+    },
+    {
+      "id": 290,
+      "name": "Chamanna Georgy",
+      "countryCode": "CH",
+      "elevation": 3175,
+      "coordinates": {
+        "latitude": 46.487882,
+        "longitude": 9.955766
+      }
+    },
+    {
+      "id": 157,
+      "name": "Chamanna Jenatsch CAS",
+      "countryCode": "CH",
+      "elevation": 2652,
+      "coordinates": {
+        "latitude": 46.52925047208734,
+        "longitude": 9.72442757693744
+      }
+    },
+    {
+      "id": 182,
+      "name": "Chamonas d'Ela CAS",
+      "countryCode": "CH",
+      "elevation": 2252,
+      "coordinates": {
+        "latitude": 46.61934562241788,
+        "longitude": 9.69092367736738
+      }
+    },
+    {
+      "id": 78,
+      "name": "Chamonna Lischana CAS",
+      "countryCode": "CH",
+      "elevation": 2500,
+      "coordinates": {
+        "latitude": 46.76558411187789,
+        "longitude": 10.334477039830718
+      }
+    },
+    {
+      "id": 33,
+      "name": "Chamonna Tuoi CAS",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.83088788320946,
+        "longitude": 10.132425477897245
+      },
+      "elevation": 2250
+    },
+    {
+      "id": 55,
+      "name": "Chelenalphütte SAC",
+      "countryCode": "CH",
+      "elevation": 2350,
+      "coordinates": {
+        "latitude": 46.67170066098432,
+        "longitude": 8.440074487368562
+      }
+    },
+    {
+      "id": 330,
+      "name": "Clubhaus Metsch",
+      "countryCode": "CH",
+      "elevation": 1775,
+      "coordinates": {
+        "latitude": 46.50854844569807,
+        "longitude": 7.611427319616684
+      }
+    },
+    {
+      "id": 363,
+      "name": "Clubheim Fälensee",
+      "countryCode": "CH",
+      "elevation": 1527,
+      "coordinates": {
+        "latitude": 47.253723944053114,
+        "longitude": 9.425711701071764
+      }
+    },
+    {
+      "id": 165,
+      "name": "Cufercalhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2385,
+      "coordinates": {
+        "latitude": 46.59333223118384,
+        "longitude": 9.359016881882264
+      }
+    },
+    {
+      "id": 228,
+      "name": "Dammahütte SAC",
+      "countryCode": "CH",
+      "elevation": 2439,
+      "coordinates": {
+        "latitude": 45.297327528691035,
+        "longitude": 8.432937711648538
+      }
+    },
+    {
+      "id": 11,
+      "name": "Doldenhornhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.4875089851749,
+        "longitude": 7.69738971947533
+      },
+      "elevation": 1915
+    },
+    {
+      "id": 31,
+      "name": "Dossenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.655278470051186,
+        "longitude": 8.169498348686103
+      },
+      "elevation": 2663
+    },
+    {
+      "id": 398,
+      "name": "Etzlihütte SAC",
+      "countryCode": "CH",
+      "elevation": 2052,
+      "coordinates": {
+        "latitude": 46.71944024272974,
+        "longitude": 8.72166739807755
+      }
+    },
+    {
+      "id": 241,
+      "name": "Fergenhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2141,
+      "coordinates": {
+        "latitude": 46.86895848370682,
+        "longitude": 9.964699319879108
+      }
+    },
+    {
+      "id": 350,
+      "name": "Fromatthütte",
+      "countryCode": "CH",
+      "elevation": 1790,
+      "coordinates": {
+        "latitude": 46.545659170065825,
+        "longitude": 7.432772573662316
+      }
+    },
+    {
+      "id": 19,
+      "name": "Fründenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.48370338168904,
+        "longitude": 7.741874377371804
+      },
+      "elevation": 2562
+    },
+    {
+      "id": 17,
+      "name": "Geltenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.36979483432684,
+        "longitude": 7.339076665436947
+      },
+      "elevation": 2002
+    },
+    {
+      "id": 39,
+      "name": "Glattalphütte SAC",
+      "countryCode": "CH",
+      "elevation": 1896,
+      "coordinates": {
+        "latitude": 46.916892856285905,
+        "longitude": 8.875021651548652
+      }
+    },
+    {
+      "id": 2,
+      "name": "Glecksteinhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.62530361795064,
+        "longitude": 8.096532633857521
+      },
+      "elevation": 2317
+    },
+    {
+      "id": 196,
+      "name": "Grubenberghütte",
+      "countryCode": "CH",
+      "elevation": 1840,
+      "coordinates": {
+        "latitude": 46.54928258608806,
+        "longitude": 7.251927373032187
+      }
+    },
+    {
+      "id": 312,
+      "name": "Gruebenhütte AACBs",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.60601359192166,
+        "longitude": 8.259323604673508
+      },
+      "elevation": 2512
+    },
+    {
+      "id": 44,
+      "name": "Gspaltenhornhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.51279419468843,
+        "longitude": 7.810238804663433
+      },
+      "elevation": 2455
+    },
+    {
+      "id": 24,
+      "name": "Hohganthütte",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.78274689273264,
+        "longitude": 7.906183650351075
+      },
+      "elevation": 1805
+    },
+    {
+      "id": 374,
+      "name": "Hollandiahütte SAC",
+      "countryCode": "CH",
+      "elevation": 3238,
+      "coordinates": {
+        "latitude": 46.47528871089591,
+        "longitude": 7.960255033124171
+      }
+    },
+    {
+      "id": 388,
+      "name": "Hüfihütte SAC",
+      "countryCode": "CH",
+      "elevation": 2334,
+      "coordinates": {
+        "latitude": 46.80179578839087,
+        "longitude": 8.818890370138908
+      }
+    },
+    {
+      "id": 32,
+      "name": "Hundsteinhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 47.25499831804414,
+        "longitude": 9.42221347673863
+      },
+      "elevation": 1554
+    },
+    {
+      "id": 53,
+      "name": "Igloo des Pantalons Blancs",
+      "countryCode": "CH",
+      "elevation": 3285,
+      "coordinates": {
+        "latitude": 46.04053459020364,
+        "longitude": 7.36837942925954
+      }
+    },
+    {
+      "id": 4,
+      "name": "Kesch-Hütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.64529107190183,
+        "longitude": 9.875171604971102
+      },
+      "elevation": 2625
+    },
+    {
+      "id": 12,
+      "name": "Konkordiahütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.658782530630624,
+        "longitude": 7.873405715791479
+      },
+      "elevation": 2850
+    },
+    {
+      "id": 274,
+      "name": "Kröntenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.80020474749352,
+        "longitude": 8.575384558793532
+      },
+      "elevation": 1903
+    },
+    {
+      "id": 64,
+      "name": "La Borbuintze",
+      "countryCode": "CH",
+      "elevation": 1333,
+      "coordinates": {
+        "latitude": 46.50983955781076,
+        "longitude": 6.961383423866888
+      }
+    },
+    {
+      "id": 13,
+      "name": "Leglerhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.92754084431717,
+        "longitude": 9.080226276409963
+      },
+      "elevation": 2273
+    },
+    {
+      "id": 5,
+      "name": "Lidernenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.93534950209336,
+        "longitude": 8.692719692885728
+      },
+      "elevation": 1727
+    },
+    {
+      "id": 243,
+      "name": "Lobhornhütte",
+      "countryCode": "CH",
+      "elevation": 1955,
+      "coordinates": {
+        "latitude": 46.6184325182883,
+        "longitude": 7.869071404232298
+      }
+    },
+    {
+      "id": 332,
+      "name": "Medelserhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2524,
+      "coordinates": {
+        "latitude": 46.640552202362564,
+        "longitude": 8.913787122289373
+      }
+    },
+    {
+      "id": 420,
+      "name": "Mischabelhütte AACZ",
+      "countryCode": "CH",
+      "elevation": 3340,
+      "coordinates": {
+        "latitude": 46.10940372022746,
+        "longitude": 7.8888726976194015
+      }
+    },
+    {
+      "id": 378,
+      "name": "Mischabeljochbiwak SAC",
+      "countryCode": "CH",
+      "elevation": 3855,
+      "coordinates": {
+        "latitude": 46.07375207023402,
+        "longitude": 7.866205735514808
+      }
+    },
+    {
+      "id": 338,
+      "name": "Mittellegihütte",
+      "countryCode": "CH",
+      "elevation": 3355,
+      "coordinates": {
+        "latitude": 46.583385411098995,
+        "longitude": 8.022604539419731
+      }
+    },
+    {
+      "id": 77,
+      "name": "Mönchsjochhütte",
+      "countryCode": "CH",
+      "elevation": 3657,
+      "coordinates": {
+        "latitude": 46.55477330529343,
+        "longitude": 8.005878468258855
+      }
+    },
+    {
+      "id": 6,
+      "name": "Monte Rosa Hütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 45.95709409031169,
+        "longitude": 7.81458963499499
+      },
+      "elevation": 2883
+    },
+    {
+      "id": 340,
+      "name": "Monte-Leone-Hütte SAC",
+      "countryCode": "CH",
+      "elevation": 2848,
+      "coordinates": {
+        "latitude": 46.260750884592625,
+        "longitude": 8.080375518495972
+      }
+    },
+    {
+      "id": 314,
+      "name": "Murgseehütte",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 47.03907372212538,
+        "longitude": 9.157289132986243
+      },
+      "elevation": 1818
+    },
+    {
+      "id": 14,
+      "name": "Mutthornhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.48640927584239,
+        "longitude": 7.830054261984009
+      },
+      "elevation": 2901
+    },
+    {
+      "id": 229,
+      "name": "Muttseehütte SAC",
+      "countryCode": "CH",
+      "elevation": 2501,
+      "coordinates": {
+        "latitude": 46.85741783758697,
+        "longitude": 9.018755808210772
+      }
+    },
+    {
+      "id": 15,
+      "name": "Oberaarjochhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.52617921139215,
+        "longitude": 8.172992818891084
+      },
+      "elevation": 3258
+    },
+    {
+      "id": 47,
+      "name": "Oberaletschhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2640,
+      "coordinates": {
+        "latitude": 46.424204336024594,
+        "longitude": 7.971264157464347
+      }
+    },
+    {
+      "id": 246,
+      "name": "Ramozhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2293,
+      "coordinates": {
+        "latitude": 46.730895620092866,
+        "longitude": 9.643716043950874
+      }
+    },
+    {
+      "id": 76,
+      "name": "Refuge des Petoudes",
+      "countryCode": "CH",
+      "elevation": 2169,
+      "coordinates": {
+        "latitude": 46.019859992001216,
+        "longitude": 7.010737542205593
+      }
+    },
+    {
+      "id": 335,
+      "name": "Refuge Giacomini",
+      "countryCode": "CH",
+      "elevation": 1893,
+      "coordinates": {
+        "latitude": 46.28823309739384,
+        "longitude": 7.162035765178265
+      }
+    },
+    {
+      "id": 341,
+      "name": "Rifugio Saoseo CAS",
+      "countryCode": "CH",
+      "elevation": 1985,
+      "coordinates": {
+        "latitude": 46.39701469903869,
+        "longitude": 10.118712392078981
+      }
+    },
+    {
+      "id": 334,
+      "name": "Rothornhütte SAC",
+      "countryCode": "CH",
+      "elevation": 3198,
+      "coordinates": {
+        "latitude": 46.04867275734528,
+        "longitude": 7.697350884740118
+      }
+    },
+    {
+      "id": 404,
+      "name": "Rotondohütte SAC",
+      "countryCode": "CH",
+      "elevation": 2571,
+      "coordinates": {
+        "latitude": 46.54490381489734,
+        "longitude": 8.484407484361302
+      }
+    },
+    {
+      "id": 69,
+      "name": "Rotstockhütte",
+      "countryCode": "CH",
+      "elevation": 2039,
+      "coordinates": {
+        "latitude": 46.545130935448924,
+        "longitude": 7.838241891673575
+      }
+    },
+    {
+      "id": 41,
+      "name": "Rugghubelhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2290,
+      "coordinates": {
+        "latitude": 46.851228540737935,
+        "longitude": 8.475343676186903
+      }
+    },
+    {
+      "id": 227,
+      "name": "Salbithütte SAC",
+      "countryCode": "CH",
+      "elevation": 2105,
+      "coordinates": {
+        "latitude": 46.676510935532995,
+        "longitude": 8.551916250870818
+      }
+    },
+    {
+      "id": 348,
+      "name": "Schalijochbiwak SAC",
+      "countryCode": "CH",
+      "elevation": 3786,
+      "coordinates": {
+        "latitude": 46.093307162884294,
+        "longitude": 7.709521741056467
+      }
+    },
+    {
+      "id": 75,
+      "name": "Schesaplana Hütte",
+      "countryCode": "CH",
+      "elevation": 1908,
+      "coordinates": {
+        "latitude": 47.0439986049009,
+        "longitude": 9.683712812397635
+      }
+    },
+    {
+      "id": 446,
+      "name": "Schilthornhütte",
+      "countryCode": "CH",
+      "elevation": 2433,
+      "coordinates": {
+        "latitude": 46.57001361877058,
+        "longitude": 7.862960596572833
+      }
+    },
+    {
+      "id": 308,
+      "name": "Schönbielhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2694,
+      "coordinates": {
+        "latitude": 46.001986931322165,
+        "longitude": 7.629040975092877
+      }
+    },
+    {
+      "id": 204,
+      "name": "Schreckhornhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2530,
+      "coordinates": {
+        "latitude": 46.581709814322664,
+        "longitude": 8.098792686635882
+      }
+    },
+    {
+      "id": 242,
+      "name": "Seetalhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2065,
+      "coordinates": {
+        "latitude": 46.87390175579834,
+        "longitude": 10.009422571490873
+      }
+    },
+    {
+      "id": 269,
+      "name": "Sewenhütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.74672493733302,
+        "longitude": 8.521018547205985
+      },
+      "elevation": 2150
+    },
+    {
+      "id": 80,
+      "name": "Silvrettahütte SAC",
+      "countryCode": "CH",
+      "elevation": 2341,
+      "coordinates": {
+        "latitude": 46.854367373736494,
+        "longitude": 10.041419342034983
+      }
+    },
+    {
+      "id": 405,
+      "name": "Skihütte Elm",
+      "countryCode": "CH",
+      "elevation": 1745
+    },
+    {
+      "id": 397,
+      "name": "Skihütte Obererbs",
+      "countryCode": "CH",
+      "elevation": 1700,
+      "coordinates": {
+        "latitude": 46.89972470025405,
+        "longitude": 9.112868382765456
+      }
+    },
+    {
+      "id": 244,
+      "name": "Spannorthütte SAC",
+      "countryCode": "CH",
+      "elevation": 1956,
+      "coordinates": {
+        "latitude": 46.79980378377118,
+        "longitude": 8.50979091241428
+      }
+    },
+    {
+      "id": 304,
+      "name": "Staldenmaadhütte",
+      "countryCode": "CH",
+      "elevation": 1120,
+      "coordinates": {
+        "latitude": 46.59601875390022,
+        "longitude": 7.499581300482875
+      }
+    },
+    {
+      "id": 326,
+      "name": "Sunnehüsi",
+      "countryCode": "CH",
+      "elevation": 1125,
+      "coordinates": {
+        "latitude": 46.64294615175545,
+        "longitude": 7.446147999548611
+      }
+    },
+    {
+      "id": 16,
+      "name": "Terrihütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.63473992942142,
+        "longitude": 9.004972921136392
+      },
+      "elevation": 2170
+    },
+    {
+      "id": 305,
+      "name": "Tierberglihütte SAC",
+      "countryCode": "CH",
+      "elevation": 2795,
+      "coordinates": {
+        "latitude": 46.701955238961176,
+        "longitude": 8.414090418610868
+      }
+    },
+    {
+      "id": 166,
+      "name": "Topalihütte SAC",
+      "countryCode": "CH",
+      "elevation": 2674,
+      "coordinates": {
+        "latitude": 46.156858183825335,
+        "longitude": 7.762003872520902
+      }
+    },
+    {
+      "id": 28,
+      "name": "Trifthütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.678067479204714,
+        "longitude": 8.37660210587307
+      },
+      "elevation": 2520
+    },
+    {
+      "id": 318,
+      "name": "Vermigel",
+      "countryCode": "CH",
+      "elevation": 2042,
+      "coordinates": {
+        "latitude": 46.59454556166264,
+        "longitude": 8.658029751484879
+      }
+    },
+    {
+      "id": 259,
+      "name": "Voralphütte SAC",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 46.69048734557585,
+        "longitude": 8.485847576983625
+      },
+      "elevation": 2126
+    },
+    {
+      "id": 209,
+      "name": "Weissmieshütten SAC",
+      "countryCode": "CH",
+      "elevation": 2726,
+      "coordinates": {
+        "latitude": 46.143800765659364,
+        "longitude": 7.97779460687363
+      }
+    },
+    {
+      "id": 164,
+      "name": "Wildhornhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2303,
+      "coordinates": {
+        "latitude": 46.37922878499043,
+        "longitude": 7.3879514489055085
+      }
+    },
+    {
+      "id": 65,
+      "name": "Wildstrubelhütte SAC",
+      "countryCode": "CH",
+      "elevation": 2789,
+      "coordinates": {
+        "latitude": 46.38256532571571,
+        "longitude": 7.468148882273813
+      }
+    },
+    {
+      "id": 214,
+      "name": "Windegghütte SAC",
+      "countryCode": "CH",
+      "elevation": 1887,
+      "coordinates": {
+        "latitude": 46.69505296809649,
+        "longitude": 8.347938376921894
+      }
+    },
+    {
+      "id": 45,
+      "name": "Windgällenhütte AACZ",
+      "countryCode": "CH",
+      "elevation": 2032,
+      "coordinates": {
+        "latitude": 46.790126135020905,
+        "longitude": 8.755717211327093
+      }
+    },
+    {
+      "id": 263,
+      "name": "Winteregghütte",
+      "countryCode": "CH",
+      "elevation": 1897,
+      "coordinates": {
+        "latitude": 46.46018620469683,
+        "longitude": 7.649843702665168
+      }
+    },
+    {
+      "id": 371,
+      "name": "Zapporthütte SAC",
+      "countryCode": "CH",
+      "elevation": 2276,
+      "coordinates": {
+        "latitude": 46.500053326756365,
+        "longitude": 9.093934809065512
+      }
+    },
+    {
+      "id": 30,
+      "name": "Zwinglipasshütte",
+      "countryCode": "CH",
+      "coordinates": {
+        "latitude": 47.23335388951546,
+        "longitude": 9.37618157643726
+      },
+      "elevation": 1999
+    },
+    {
+      "id": 81,
+      "name": "Blaueishütte",
+      "countryCode": "DE",
+      "elevation": 1680,
+      "coordinates": {
+        "latitude": 47.58701666666667,
+        "longitude": 12.869466666666668
+      }
+    },
+    {
+      "id": 218,
+      "name": "Bodenschneidhaus",
+      "countryCode": "DE",
+      "elevation": 1365,
+      "coordinates": {
+        "latitude": 47.67777777777778,
+        "longitude": 11.839166666666667
+      }
+    },
+    {
+      "id": 286,
+      "name": "Brunnenkopfhäuser",
+      "countryCode": "DE",
+      "coordinates": {
+        "latitude": 47.58199028764329,
+        "longitude": 10.927235147276454
+      },
+      "elevation": 1602
+    },
+    {
+      "id": 131,
+      "name": "Dessauer Hütte",
+      "countryCode": "DE",
+      "elevation": 281,
+      "coordinates": {
+        "latitude": 50.8973335,
+        "longitude": 14.1357629
+      }
+    },
+    {
+      "id": 83,
+      "name": "Fritz-Putz Hütte",
+      "countryCode": "DE",
+      "elevation": 1180,
+      "coordinates": {
+        "latitude": 47.53777777777778,
+        "longitude": 10.773333333333333
+      }
+    },
+    {
+      "id": 282,
+      "name": "Haus Hammer",
+      "countryCode": "DE",
+      "elevation": 750,
+      "coordinates": {
+        "latitude": 47.703722222222225,
+        "longitude": 11.940166666666666
+      }
+    },
+    {
+      "id": 73,
+      "name": "Höllentalangerhütte",
+      "countryCode": "DE",
+      "elevation": 1387,
+      "coordinates": {
+        "latitude": 47.43805555555555,
+        "longitude": 11.024722222222223
+      }
+    },
+    {
+      "id": 256,
+      "name": "Hütte Hammer",
+      "countryCode": "DE",
+      "elevation": 750,
+      "coordinates": {
+        "latitude": 47.703722222222225,
+        "longitude": 11.940166666666666
+      }
+    },
+    {
+      "id": 258,
+      "name": "Jonsdorfer Hütte",
+      "countryCode": "DE",
+      "elevation": 452,
+      "coordinates": {
+        "latitude": 50.8513,
+        "longitude": 14.6952
+      }
+    },
+    {
+      "id": 344,
+      "name": "Jugendbildungsstätte Winterraum",
+      "countryCode": "DE",
+      "elevation": 857
+    },
+    {
+      "id": 195,
+      "name": "Kärlingerhaus",
+      "countryCode": "DE",
+      "elevation": 1631,
+      "coordinates": {
+        "latitude": 47.495556,
+        "longitude": 12.937222
+      }
+    },
+    {
+      "id": 139,
+      "name": "Lenggrieser Hütte",
+      "countryCode": "DE",
+      "elevation": 1338,
+      "coordinates": {
+        "latitude": 47.651944444444446,
+        "longitude": 11.631111111111112
+      }
+    },
+    {
+      "id": 392,
+      "name": "Lukas Testhütte",
+      "countryCode": "DE",
+      "elevation": 4321,
+      "coordinates": {
+        "latitude": 52.05110073954383,
+        "longitude": 0.5108836503352067
+      }
+    },
+    {
+      "id": 150,
+      "name": "Münchner Haus",
+      "countryCode": "DE",
+      "elevation": 2959,
+      "coordinates": {
+        "latitude": 47.420944444444444,
+        "longitude": 10.984916666666665
+      }
+    },
+    {
+      "id": 107,
+      "name": "Ostwandlager",
+      "countryCode": "DE",
+      "elevation": 623
+    },
+    {
+      "id": 407,
+      "name": "Priener Hütte",
+      "countryCode": "DE",
+      "elevation": 1410,
+      "coordinates": {
+        "latitude": 47.70194444444445,
+        "longitude": 12.327777777777778
+      }
+    },
+    {
+      "id": 270,
+      "name": "Prinz-Luitpoldhaus",
+      "countryCode": "DE",
+      "elevation": 1846,
+      "coordinates": {
+        "latitude": 47.3925,
+        "longitude": 10.42
+      }
+    },
+    {
+      "id": 128,
+      "name": "Reintalangerhütte",
+      "countryCode": "DE",
+      "elevation": 1369,
+      "coordinates": {
+        "latitude": 47.40530555555556,
+        "longitude": 11.035666666666666
+      }
+    },
+    {
+      "id": 104,
+      "name": "Rotwandhaus",
+      "countryCode": "DE",
+      "elevation": 1737,
+      "coordinates": {
+        "latitude": 47.64611111111111,
+        "longitude": 11.934722222222222
+      }
+    },
+    {
+      "id": 101,
+      "name": "Saupsdorfer Hütte",
+      "countryCode": "DE",
+      "elevation": 285,
+      "coordinates": {
+        "latitude": 50.927783,
+        "longitude": 14.335
+      }
+    },
+    {
+      "id": 327,
+      "name": "Schneibsteinhaus",
+      "countryCode": "DE",
+      "elevation": 1670,
+      "coordinates": {
+        "latitude": 47.572147,
+        "longitude": 13.039249
+      }
+    },
+    {
+      "id": 287,
+      "name": "Soiernhaus",
+      "countryCode": "DE",
+      "elevation": 1616,
+      "coordinates": {
+        "latitude": 47.49377777777778,
+        "longitude": 11.348638888888889
+      }
+    },
+    {
+      "id": 85,
+      "name": "Staufner Haus",
+      "countryCode": "DE",
+      "elevation": 1634,
+      "coordinates": {
+        "latitude": 47.50966,
+        "longitude": 10.05773
+      }
+    },
+    {
+      "id": 387,
+      "name": "Sylvan-Hütte",
+      "countryCode": "DE",
+      "elevation": 374,
+      "coordinates": {
+        "latitude": 49.90222222222222,
+        "longitude": 9.479166666666666
+      }
+    },
+    {
+      "id": 324,
+      "name": "Traunsteiner Skihütte/ Winklmoosalm",
+      "countryCode": "DE",
+      "elevation": 1160,
+      "coordinates": {
+        "latitude": 47.6589879,
+        "longitude": 12.585707036147
+      }
+    },
+    {
+      "id": 212,
+      "name": "Tutzinger Hütte",
+      "countryCode": "DE",
+      "elevation": 1327,
+      "coordinates": {
+        "latitude": 47.657722,
+        "longitude": 11.462417
+      }
+    },
+    {
+      "id": 224,
+      "name": "Wanderheim Kreuzmoos",
+      "countryCode": "DE",
+      "elevation": 725,
+      "coordinates": {
+        "latitude": 48.18936,
+        "longitude": 7.97712
+      }
+    },
+    {
+      "id": 151,
+      "name": "Watzmannhaus",
+      "countryCode": "DE",
+      "elevation": 1930,
+      "coordinates": {
+        "latitude": 47.571250000000006,
+        "longitude": 12.767333333333335
+      }
+    },
+    {
+      "id": 310,
+      "name": "Dreischusterhütte",
+      "countryCode": "IT",
+      "elevation": 1639,
+      "coordinates": {
+        "latitude": 46.67453694444444,
+        "longitude": 12.297246388888889
+      }
+    },
+    {
+      "id": 257,
+      "name": "Hochfeilerhütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.962415149942544,
+        "longitude": 11.708491091695697
+      },
+      "elevation": 2715
+    },
+    {
+      "id": 442,
+      "name": "Marteller Hütte",
+      "countryCode": "IT",
+      "elevation": 2610
+    },
+    {
+      "id": 126,
+      "name": "Meraner Hütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.68549199888317,
+        "longitude": 11.274047475192445
+      },
+      "elevation": 1960
+    },
+    {
+      "id": 230,
+      "name": "Oberetteshütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.76506198843489,
+        "longitude": 10.711160380172432
+      },
+      "elevation": 2670
+    },
+    {
+      "id": 285,
+      "name": "Radlseehütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.708256553037764,
+        "longitude": 11.580227750473744
+      },
+      "elevation": 2284
+    },
+    {
+      "id": 284,
+      "name": "Schlernbödelehütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.52286808308397,
+        "longitude": 11.584380592839898
+      },
+      "elevation": 1693
+    },
+    {
+      "id": 276,
+      "name": "Sesvennahütte",
+      "countryCode": "IT",
+      "coordinates": {
+        "latitude": 46.734563745193356,
+        "longitude": 10.435465374303217
+      },
+      "elevation": 2262
+    },
+    {
+      "id": 337,
+      "name": "Zsigmondyhütte (Rif. Comici)",
+      "countryCode": "IT",
+      "elevation": 2224,
+      "coordinates": {
+        "latitude": 46.62840805555555,
+        "longitude": 12.357865833333333
+      }
+    },
+    {
+      "id": 345,
+      "name": "Aljažev Dom",
+      "countryCode": "SI",
+      "elevation": 1015,
+      "coordinates": {
+        "latitude": 46.409026,
+        "longitude": 13.84345
+      }
+    },
+    {
+      "id": 361,
+      "name": "Dom Planika pod Triglavom",
+      "countryCode": "SI",
+      "elevation": 2408,
+      "coordinates": {
+        "latitude": 46.371372,
+        "longitude": 13.846077
+      }
+    },
+    {
+      "id": 360,
+      "name": "Ko?a na Doli?u",
+      "countryCode": "SI",
+      "elevation": 2151,
+      "coordinates": {
+        "latitude": 46.364867,
+        "longitude": 13.819466
+      }
+    },
+    {
+      "id": 359,
+      "name": "Ko?a na Planini pri Jezeru",
+      "countryCode": "SI",
+      "elevation": 1453,
+      "coordinates": {
+        "latitude": 46.309708,
+        "longitude": 13.82774
+      }
+    },
+    {
+      "id": 448,
+      "name": "Ko?a pod Bogatinom",
+      "countryCode": "SI",
+      "elevation": 1513,
+      "coordinates": {
+        "latitude": 46.287727,
+        "longitude": 13.763278
+      }
+    },
+    {
+      "id": 364,
+      "name": "Poga?nikov dom na Kriških podih",
+      "countryCode": "SI",
+      "elevation": 2050,
+      "coordinates": {
+        "latitude": 46.401965,
+        "longitude": 13.800577
+      }
+    },
+    {
+      "id": 368,
+      "name": "Vodnikov dom na Velem polju",
+      "countryCode": "SI",
+      "elevation": 1817,
+      "coordinates": {
+        "latitude": 46.355914,
+        "longitude": 13.761358
+      }
+    },
+    {
+      "id": 358,
+      "name": "Zasavska ko?a na Prehodavcih",
+      "countryCode": "SI",
+      "elevation": 2071,
+      "coordinates": {
+        "latitude": 46.358529,
+        "longitude": 13.792261
+      }
+    }
+  ],
+  "updatedAt": "2021-05-30T14:48:55.453Z"
+}
