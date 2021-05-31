@@ -20,8 +20,6 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: >-
-          cd build && git config user.email '$GIT_CONFIG_USER_EMAIL' && git config user.name '$GIT_CONFIG_USER_NAME' && git init && git add . && git commit -m init && git push https://mlenkeit:$GH_AUTH_TOKEN@github.com/mlenkeit/oad.git master:gh-pages --force && cd ..
+          cd build && git config user.email '${{secrets.GIT_CONFIG_USER_EMAIL}}' && git config user.name '${{secrets.GIT_CONFIG_USER_NAME}}' && git init && git add . && git commit -m init && git push https://mlenkeit:$GH_AUTH_TOKEN@github.com/mlenkeit/oad.git master:gh-pages --force && cd ..
         env:
-          GIT_CONFIG_USER_EMAIL: ${{secrets.GIT_CONFIG_USER_EMAIL}}
-          GIT_CONFIG_USER_NAME: ${{secrets.GIT_CONFIG_USER_NAME}}
           GH_AUTH_TOKEN: ${{secrets.PUSH_TO_OAP}}
