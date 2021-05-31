@@ -1,4 +1,4 @@
-import TransformableArray, { ArrayTransformation } from './../util/transformable-array'
+import { ArrayTransformation } from './../util/transformable-array'
 import hutsStorage from './../../webapp/huts.json'
 import QueryBuilder, { ResultTransformation } from './QueryBuilder'
 import * as geolib from 'geolib'
@@ -45,7 +45,7 @@ export interface WithReservations {
 export type HutWithReservations = Hut & WithReservations
 
 type HutArrayTransformation = ArrayTransformation<Hut>
-type HutResultTransformation = ResultTransformation<Hut>
+// type HutResultTransformation = ResultTransformation<Hut>
 
 export class HutQueryBuilder extends QueryBuilder<Hut> {
   protected copy(data: Hut[] | Promise<Hut[]>, tx: ArrayTransformation<Hut>[]): HutQueryBuilder {

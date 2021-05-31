@@ -1,26 +1,26 @@
-import React from 'react'
+// import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Hut } from './../../common/repo/hut-repo'
 import { LatLngExpression } from 'leaflet'
 
-const {
-  useState
-} = React
+// const {
+//   useState
+// } = React
 
-const {
-  Dialog
-} = require('@material-ui/core')
+// const {
+//   Dialog
+// } = require('@material-ui/core')
 
 
 const HutMap = (props: any) => {
   const { 
     huts,
-    mapCenter
+    // mapCenter
   } = props
-  const center = {
-    lat: mapCenter ? mapCenter.latitude : null, 
-    lng: mapCenter ? mapCenter.longitude : null
-  }
+  // const center = {
+  //   lat: mapCenter ? mapCenter.latitude : null, 
+  //   lng: mapCenter ? mapCenter.longitude : null
+  // }
 
   const position = [47.505, 12.09] as LatLngExpression
 

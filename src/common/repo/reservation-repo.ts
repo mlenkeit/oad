@@ -1,10 +1,8 @@
-import TransformableArray, { ArrayTransformation } from '../util/transformable-array'
+import { ArrayTransformation } from '../util/transformable-array'
 import reservationsStorage from '../../webapp/reservations.json'
-import QueryBuilder, { ResultTransformation } from './QueryBuilder'
-import * as geolib from 'geolib'
+import QueryBuilder from './QueryBuilder'
 import { HutId, Hut } from './hut-repo'
 import moment from 'moment'
-import * as async from 'async'
 
 export interface Reservation {
   hutId: HutId
@@ -21,7 +19,6 @@ export interface WithHut {
 export type ReservationWithHut = Reservation & WithHut
 
 export type ReservationArrayTransformation = ArrayTransformation<Reservation>
-type ReservationResultTransformation = ResultTransformation<Reservation>
 
 export class ReservationQueryBuilder extends QueryBuilder<Reservation> {
   protected copy(data: Reservation[] | Promise<Reservation[]>, tx: ArrayTransformation<Reservation>[]): ReservationQueryBuilder {
@@ -68,12 +65,12 @@ const getAll = (): ReservationQueryBuilder => {
 //   return hut ?? null
 // }
 
-const compareBy = (propertyName: string) => (a: any, b: any) => {
-  const aVal = a[propertyName], bVal = b[propertyName]
-  if (aVal < bVal) return -1
-  else if (aVal > bVal) return 1
-  else return 0
-}
+// const compareBy = (propertyName: string) => (a: any, b: any) => {
+//   const aVal = a[propertyName], bVal = b[propertyName]
+//   if (aVal < bVal) return -1
+//   else if (aVal > bVal) return 1
+//   else return 0
+// }
 
 export const transformReservationArray = async (reservations: Reservation[], transformations: ReservationArrayTransformation[]): Promise<Reservation[]> => {
   const transformed = await transformations.reduce(async (arr, fn) => {

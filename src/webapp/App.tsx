@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import React, { useState, useEffect } from 'react'
@@ -13,14 +13,14 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
+// import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+// import NotificationsIcon from '@material-ui/icons/Notifications';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import FormControl from '@material-ui/core/FormControl';
@@ -37,8 +37,8 @@ import {
 } from '@material-ui/pickers'
 
 import HutMap from './components/HutMap'
-import HutTable from './components/HutTable'
-import hutRepoFactory, { HutQueryBuilder, HutWithDistance, Hut, transformHutArray, transformations as hutTx } from './../common/repo/hut-repo'
+// import HutTable from './components/HutTable'
+import hutRepoFactory, { /*HutQueryBuilder, HutWithDistance,*/ Hut, transformHutArray, transformations as hutTx } from './../common/repo/hut-repo'
 import reservationRepoFactory, { transformations as reservationTx } from './../common/repo/reservation-repo'
 
 const hutRepo = hutRepoFactory()
@@ -133,7 +133,7 @@ function App() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+  // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   const [ huts, setHuts ] = useState<Hut[]>([])
 
@@ -144,26 +144,26 @@ function App() {
   ])
 
   const [ elevationFilters, setElevationFilters ] = useState([
-    { label: 'Min. Elevation', tx: hutTx.filterByMinElevation, value: null, active: false },
-    { label: 'Max. Elevation', tx: hutTx.filterByMaxElevation, value: null, active: false }
+    { label: 'Min. elevation', tx: hutTx.filterByMinElevation, value: null, active: false },
+    { label: 'Max. elevation', tx: hutTx.filterByMaxElevation, value: null, active: false }
   ])
 
   const [ reservationDateFilter, setReservationDateFilter ] = useState(
     { label: 'Reservation Date', tx: reservationTx.filterByDateRange, value: null, active: false }
   )
   const [ freeRoomFilter, setFreeRoomFilter ] = useState(
-    { label: 'Free Room', tx: reservationTx.filterByMinFreeRoom, value: null, active: false }
+    { label: 'Number of people', tx: reservationTx.filterByMinFreeRoom, value: null, active: false }
   )
 
-  const [ transformations, setTransformations ] = useState([
-    { label: '🇩🇪 DE', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('DE'), value: 'DE' },
-    { label: '🇨🇭 CH', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('CH'), value: 'CH' },
-    { label: '🇦🇹 AT', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('AT'), value: 'AT' },
-    { label: 'Min. Elevation', tx: hutTx.noop(), txFromInput: hutTx.filterByMinElevation, group: 'elevation', combinable: true, active: false, value: null },
-    { label: 'Max. Elevation', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'elevation', combinable: true, active: false, value: null },
-    { label: 'Reservation Date', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'availability', active: false, value: null },
-    { label: 'Free Room', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'availability', active: false, value: null },
-  ])
+  // const [ transformations, setTransformations ] = useState([
+  //   { label: '🇩🇪 DE', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('DE'), value: 'DE' },
+  //   { label: '🇨🇭 CH', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('CH'), value: 'CH' },
+  //   { label: '🇦🇹 AT', group: 'countryCode', active: false, tx: hutTx.filterByCountryCode('AT'), value: 'AT' },
+  //   { label: 'Min. Elevation', tx: hutTx.noop(), txFromInput: hutTx.filterByMinElevation, group: 'elevation', combinable: true, active: false, value: null },
+  //   { label: 'Max. Elevation', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'elevation', combinable: true, active: false, value: null },
+  //   { label: 'Reservation Date', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'availability', active: false, value: null },
+  //   { label: 'Free Room', tx: hutTx.noop(), txFromInput: hutTx.filterByMaxElevation, group: 'availability', active: false, value: null },
+  // ])
   
   useEffect(() => {
     const fetchHuts = async () => {
@@ -354,7 +354,7 @@ function App() {
                         />
                       </MuiPickersUtilsProvider>
                       <TextField
-                        label="Free Room"
+                        label={freeRoomFilter.label}
                         onChange={updateFreeRoom(freeRoomFilter)}
                         InputProps={{
                           endAdornment: <InputAdornment position="end">m</InputAdornment>,
