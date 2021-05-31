@@ -1,6 +1,6 @@
 import { ArrayTransformation } from './../util/transformable-array'
 import hutsStorage from './../../webapp/huts.json'
-import QueryBuilder, { ResultTransformation } from './QueryBuilder'
+import QueryBuilder from './QueryBuilder'
 import * as geolib from 'geolib'
 import { Reservation, transformReservationArray, transformations as reservationTx, ReservationArrayTransformation } from './reservation-repo'
 import * as async from 'async'
