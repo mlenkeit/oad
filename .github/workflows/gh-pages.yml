@@ -1,0 +1,24 @@
+on:
+  push:
+    branches: [ new ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build
+      - run: 'cd build && git init && git add . && git commit -m init && git push https://mlenkeit:$GH_AUTH_TOKEN@github.com/mlenkeit/oad.git master:gh-pages --force && cd ..'
+        env:
+          GH_AUTH_TOKEN: ${{secrets.PUSH_TO_OAP}}
