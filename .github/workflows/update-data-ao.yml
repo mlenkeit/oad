@@ -17,6 +17,9 @@ jobs:
           node-version: 16.x
       - run: npm ci
       - run: npm run cli -- download huts
+      - run: npm run cli -- download hut-infos
+      - run: npm run cli -- download reservations
+      - run: npm run cli -- download aggregate
       - name: Archive downloads
         uses: actions/upload-artifact@v2
         with:
@@ -27,3 +30,10 @@ jobs:
             data/download/huts-de.json
             data/download/huts-it.json
             data/download/huts-si.json
+      - name: Archive aggregates
+        uses: actions/upload-artifact@v2
+        with:
+          name: ao-aggregates
+          path: |
+            src/webapp/huts.json
+            src/webapp/reservations.json

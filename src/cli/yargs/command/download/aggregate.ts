@@ -41,7 +41,6 @@ export default (): CommandModule => {
           })
         })
         .on('reservationsStorage', ({ data }: { data: ReservationsStorage }) => {
-          if (data.hutId === 151) console.log(data.reservations[10])
           data.reservations.forEach(it => {
             // @ts-ignore
             const date = moment(it.date, 'DD.MM.YYYY')
@@ -54,7 +53,6 @@ export default (): CommandModule => {
                 .filter(it => it.closed === false)
                 .reduce((total, it) => total + it.freeRoom, 0)
             }
-            if (data.hutId === 151 && it.date === '09.06.2021') console.log(r)
             allReservations.push(r)
           })
         })
