@@ -34,6 +34,7 @@ import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import TabbedHutList from './components/TabbedHutList'
+import moment from 'moment'
 
 import MomentUtils from '@date-io/moment';
 import {
@@ -167,7 +168,7 @@ function App() {
   // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   const [ huts, setHuts ] = useState<Hut[]>([])
-  const [ hutsUpdatedAt, setHutsUpdatedAt ] = useState<moment.Moment|null>(null)
+  const [ hutsUpdatedAt, setHutsUpdatedAt ] = useState(moment())
 
   const [ countryCodeFilters, setCountryCodeFilters ] = useState([
     { label: '🇩🇪 DE', tx: hutTx.filterByCountryCode, value: 'DE', active: false }, 
@@ -438,7 +439,7 @@ function App() {
             </Grid>
           </Grid>
           <Box pt={4}>
-            Data last updated {hutsUpdatedAt ? hutsUpdatedAt.fromNow() : 'unknown'}
+            Data last updated <time dateTime={hutsUpdatedAt.toISOString()} title={hutsUpdatedAt.format()}>{hutsUpdatedAt.fromNow()}</time>
           </Box>
         </Container>
       </main>
