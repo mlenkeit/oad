@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box'
 import Tab from '@material-ui/core/Tab'
 import Tabs from '@material-ui/core/Tabs'
 import HutMap from './HutMap'
-import HutTable from './HutTable'
+import HutTable from './HutList'
 
 const TabPanel = (props: any) => {
   const { children, value, index, ...other } = props;
@@ -41,7 +41,7 @@ const TabbedHutList = (props: any) => {
           <Tab label={`Map (${huts.length})`} />
         </Tabs>
         <TabPanel value={tabIndex} index={0}>
-          <div style={{ height: 400, width: '100%' }}>
+          <div style={{ width: '100%' }}>
             <HutTable huts={huts} />
           </div>
         </TabPanel>
