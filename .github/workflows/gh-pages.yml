@@ -1,0 +1,31 @@
+on:
+  push:
+    branches: [ main ]
+  workflow_run:
+    workflows: [ "Update data from alpsonline.org" ]
+    branches: [ main ]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - run: npm ci
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          workflow: update-data-ao.yml
+          name: ao-aggregates
+          path: src/webapp
+      - run: npm run build
+      - run: >-
+          cd build && git init && git config user.email '${{secrets.GIT_CONFIG_USER_EMAIL}}' && git config user.name '${{secrets.GIT_CONFIG_USER_NAME}}' && git add . && git commit -m init && git push https://mlenkeit:$GH_AUTH_TOKEN@github.com/mlenkeit/oad.git master:gh-pages --force && cd ..
+        env:
+          GH_AUTH_TOKEN: ${{secrets.PUSH_TO_OAP}}

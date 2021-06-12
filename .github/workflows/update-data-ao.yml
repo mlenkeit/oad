@@ -1,0 +1,39 @@
+name: Update data from alpsonline.org
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  # push:
+  #   branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - run: npm ci
+      - run: npm run cli -- download huts
+      - run: npm run cli -- download hut-infos
+      - run: npm run cli -- download reservations
+      - run: npm run cli -- download aggregate
+      - name: Archive downloads
+        uses: actions/upload-artifact@v2
+        with:
+          name: ao-download
+          path: |
+            data/download/huts-at.json
+            data/download/huts-ch.json
+            data/download/huts-de.json
+            data/download/huts-it.json
+            data/download/huts-si.json
+      - name: Archive aggregates
+        uses: actions/upload-artifact@v2
+        with:
+          name: ao-aggregates
+          path: |
+            src/webapp/huts.json
+            src/webapp/reservations.json

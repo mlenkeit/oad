@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/cli",
+    "src/common"
+  ]
+}
