@@ -167,6 +167,7 @@ function App() {
   // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   const [ huts, setHuts ] = useState<Hut[]>([])
+  const [ hutsUpdatedAt, setHutsUpdatedAt ] = useState<moment.Moment|null>(null)
 
   const [ countryCodeFilters, setCountryCodeFilters ] = useState([
     { label: '🇩🇪 DE', tx: hutTx.filterByCountryCode, value: 'DE', active: false }, 
@@ -199,6 +200,7 @@ function App() {
   useEffect(() => {
     const fetchHuts = async () => {
       console.log('reservationDateFilter', reservationDateFilter)
+      setHutsUpdatedAt(hutRepo.getUpdatedAt())
       const allHuts = await hutRepo.getAll().apply()
       // const filteredHuts = await transformHutArray(allHuts, transformations
       //     .filter(it => it.active === true)
@@ -436,7 +438,7 @@ function App() {
             </Grid>
           </Grid>
           <Box pt={4}>
-            Copyright
+            Data last updated {hutsUpdatedAt ? hutsUpdatedAt.fromNow() : 'unknown'}
           </Box>
         </Container>
       </main>

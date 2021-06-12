@@ -4,6 +4,7 @@ import QueryBuilder from './QueryBuilder'
 import * as geolib from 'geolib'
 import { Reservation, transformReservationArray, transformations as reservationTx, ReservationArrayTransformation } from './reservation-repo'
 import * as async from 'async'
+import moment from 'moment'
 
 export type HutId = number
 export type CountryCode = string
@@ -105,6 +106,10 @@ export class HutQueryBuilder extends QueryBuilder<Hut> {
 const getAll = (): HutQueryBuilder => {
   return new HutQueryBuilder([...hutsStorage.huts])
   // return TransformableArray.from([...hutsStorage.huts])
+}
+
+const getUpdatedAt = (): moment.Moment => {
+  return moment(hutsStorage.updatedAt)
 }
 
 const getById = async (id: HutId): Promise<Hut|null> => {
@@ -254,6 +259,7 @@ export const transformations = {
 const hutRepoFactory = () => {
   return {
     getAll,
+    getUpdatedAt,
     getById,
     tx: {
       filterByCountryCode: (countryCode: CountryCode): HutArrayTransformation => arr => {
