@@ -13,7 +13,7 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 // import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-// import Badge from '@material-ui/core/Badge';
+import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -22,7 +22,10 @@ import Paper from '@material-ui/core/Paper';
 import MenuIcon from '@material-ui/icons/Menu';
 import RestoreIcon from '@material-ui/icons/Restore';
 // import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-// import NotificationsIcon from '@material-ui/icons/Notifications';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import FilterListIcon from '@material-ui/icons/FilterList';
+import MapIcon from '@material-ui/icons/Map';
+import ListIcon from '@material-ui/icons/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -35,6 +38,7 @@ import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import TabbedHutList from './components/TabbedHutList'
+import HutMap from './components/HutMap'
 import moment from 'moment'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -43,6 +47,7 @@ import MomentUtils from '@date-io/moment';
 import {
   MuiPickersUtilsProvider, KeyboardDatePicker
 } from '@material-ui/pickers'
+
 
 // import HutMap from './components/HutMap'
 // import HutTable from './components/HutTable'
@@ -103,9 +108,9 @@ const useStyles = makeStyles((theme) => ({
   // },
   menuButton: {
     marginRight: theme.spacing(1),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none'
-    }
+    // [theme.breakpoints.up('sm')]: {
+    //   display: 'none'
+    // }
   },
   menuButtonHidden: {
     display: 'none',
@@ -160,11 +165,23 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
+const country = (hut: any) => {
+  const countryCode = hut.countryCode.toLowerCase()
+  if (countryCode === 'de') return '🇩🇪'
+  if (countryCode === 'ch') return '🇨🇭'
+  if (countryCode === 'at') return '🇦🇹'
+  if (countryCode === 'si') return '🇸🇰'
+  return 'n/a'
+}
+
+type HutDisplayMode = 'list' | 'map'
+
 function App() {
   const theme = useTheme();
   const matchesMediaQuery = useMediaQuery(theme.breakpoints.down('sm'));
   console.log('matchesMediaQuery', matchesMediaQuery)
   const classes = useStyles()
+  const [ hutDisplayMode, setHutDisplayMode ] = useState<HutDisplayMode>('list')
   const [open, setOpen] = React.useState(true)
   const handleDrawerOpen = () => {
     console.log('setting open to', !open)
@@ -291,6 +308,20 @@ function App() {
     }
   }
 
+  const changeHutDisplayMode = (targetMode: HutDisplayMode) => {
+    return () => setHutDisplayMode(targetMode)
+  }
+
+  const mainRef: any = React.createRef()
+  const [ showSubtitle, setShowSubtitle ] = useState(false) 
+  const onMainScroll = () => {
+    if (mainRef.current.scrollTop > 60 && !showSubtitle) {
+      setShowSubtitle(true)
+    } else if (mainRef.current.scrollTop <= 60 && showSubtitle) {
+      setShowSubtitle(false)
+    }
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -307,113 +338,48 @@ function App() {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Open Alpine Data
+            Open Alpine Data {showSubtitle ? `- Huts (${huts.length})` : ''}
           </Typography>
-          {/* <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton> */}
+          <IconButton color="inherit">
+            <FilterListIcon />
+          </IconButton>
+          {hutDisplayMode === 'list'
+            ? <IconButton onClick={changeHutDisplayMode('map')} color="inherit">
+                <MapIcon />
+              </IconButton>
+            : <IconButton onClick={changeHutDisplayMode('list')} color="inherit">
+                <ListIcon />
+              </IconButton>
+          }
         </Toolbar>
       </AppBar>
-      <main className={classes.content}>
+      <main className={classes.content} onScroll={onMainScroll} ref={mainRef}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
           <Typography component="h2" variant="h5" color="primary" gutterBottom>
-            Find a Hut
+            Huts ({huts.length})
           </Typography>
-          <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                  Filter
-                </Typography>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Countries</FormLabel>
-                      <FormGroup>
-                      {countryCodeFilters.map(it =>
-                        <FormControlLabel
-                          control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
-                          label={it.label}
-                        />
-                      )}
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Elevation</FormLabel>
-                      <FormGroup>
-                      {elevationFilters.map(it =>
-                        <TextField
-                          label={it.label}
-                          onChange={updateElevation(it)}
-                          InputProps={{
-                            endAdornment: <InputAdornment position="end">m</InputAdornment>,
-                          }}
-                        />
-                      )}
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Availability</FormLabel>
-                      <FormGroup>
-                      <MuiPickersUtilsProvider utils={MomentUtils}>
-                        <KeyboardDatePicker
-                          disableToolbar
-                          autoOk={true}
-                          variant="inline"
-                          format="DD.MM.YYYY"
-                          margin="normal"
-                          label="Date"
-                          value={reservationDateFilter.value}
-                          onChange={handleOpen(reservationDateFilter)}
-                          // KeyboardButtonProps={{
-                          //   'aria-label': 'change date',
-                          // }}
-                        />
-                      </MuiPickersUtilsProvider>
-                      <TextField
-                        label={freeRoomFilter.label}
-                        onChange={updateFreeRoom(freeRoomFilter)} />
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Grid>
-            {/* Recent Orders */}
-            <Grid item xs={12}>
-              {/* <Paper className={classes.paper}> */}
-              <Paper className={classes.paper}>
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                  Huts ({huts.length})
-                </Typography>
-                <TabbedHutList huts={huts}/>
-                {/* <div style={{ display: 'flex', height: '500px' }}>
-                  <div style={{ flexGrow: 1 }}>
-                  </div>
-                </div> */}
-              </Paper>
-            </Grid>
-          </Grid>
+          {hutDisplayMode === 'list'
+            ? <List>
+                <div>
+                {huts.map((hut: any) =>
+                <ListItem divider={true}>
+                  <ListItemText primary={hut.name} secondary={`${country(hut)} ${hut.elevation} m`} />
+                </ListItem>
+                )}
+                </div>
+              </List>
+            : <div style={{ display: 'flex', height: '80vh' }}>
+                <div style={{ flexGrow: 1 }}>
+                  <HutMap huts={huts} />
+                </div>
+              </div>
+          }
           <Box pt={4}>
             Data last updated <time dateTime={hutsUpdatedAt.toISOString()} title={hutsUpdatedAt.format()}>{hutsUpdatedAt.fromNow()}</time>
           </Box>
         </Container>
       </main>
-      <footer className={classes.footer}>
-        <BottomNavigation
-          showLabels
-        >
-          <BottomNavigationAction label="Huts"  icon={<RestoreIcon />} />
-        </BottomNavigation>
-      </footer>
     </div>
   )
 }
