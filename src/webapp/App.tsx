@@ -141,15 +141,24 @@ const useStyles = makeStyles((theme) => ({
       })
     }
   },
-  appBarSpacer: theme.mixins.toolbar,
+  appBarSpacer: {
+    ...theme.mixins.toolbar,
+    flex: '0 1 56px'
+  },
   content: {
     flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
     // height: '100vh',
     overflow: 'auto',
   },
   container: {
+    flex: '1 1 auto',
+    overflow: 'scroll',
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'column',
   },
   paper: {
     padding: theme.spacing(2),
@@ -369,7 +378,7 @@ function App() {
                 )}
                 </div>
               </List>
-            : <div style={{ display: 'flex', height: '80vh' }}>
+            : <div style={{ display: 'flex', flex: '1 1 auto' }}>
                 <div style={{ flexGrow: 1 }}>
                   <HutMap huts={huts} />
                 </div>
