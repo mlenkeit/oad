@@ -2,10 +2,10 @@
 import './App.css';
 
 import React, { useState, useEffect } from 'react'
-import clsx from 'clsx'
+// import clsx from 'clsx'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Drawer from '@material-ui/core/Drawer';
+// import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -20,11 +20,15 @@ import Paper from '@material-ui/core/Paper';
 // import Link from '@material-ui/core/Link';
 // import Icon from '@material-ui/core/Icon';
 import MenuIcon from '@material-ui/icons/Menu';
+// import RestoreIcon from '@material-ui/icons/Restore';
 // import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 // import NotificationsIcon from '@material-ui/icons/Notifications';
+import FilterListIcon from '@material-ui/icons/FilterList';
+import MapIcon from '@material-ui/icons/Map';
+import ListIcon from '@material-ui/icons/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
@@ -32,14 +36,20 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
+import Modal from '@material-ui/core/Modal';
+import Fade from '@material-ui/core/Fade';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import TabbedHutList from './components/TabbedHutList'
+// import TabbedHutList from './components/TabbedHutList'
+import HutMap from './components/HutMap'
 import moment from 'moment'
+// import BottomNavigation from '@material-ui/core/BottomNavigation';
+// import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import MomentUtils from '@date-io/moment';
 import {
   MuiPickersUtilsProvider, KeyboardDatePicker
 } from '@material-ui/pickers'
+
 
 // import HutMap from './components/HutMap'
 // import HutTable from './components/HutTable'
@@ -55,9 +65,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 //   // IconDefinition,
 //   // findIconDefinition
 // } from '@fortawesome/fontawesome-svg-core'
-import {
-  FontAwesomeIcon
-} from '@fortawesome/react-fontawesome'
+// import {
+//   FontAwesomeIcon
+// } from '@fortawesome/react-fontawesome'
 
 library.add(fas)
 // const coffeeLookup: IconLookup = { prefix: 'fas', iconName: 'house' }
@@ -70,6 +80,8 @@ const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
@@ -98,9 +110,9 @@ const useStyles = makeStyles((theme) => ({
   // },
   menuButton: {
     marginRight: theme.spacing(1),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none'
-    }
+    // [theme.breakpoints.up('sm')]: {
+    //   display: 'none'
+    // }
   },
   menuButtonHidden: {
     display: 'none',
@@ -131,15 +143,24 @@ const useStyles = makeStyles((theme) => ({
       })
     }
   },
-  appBarSpacer: theme.mixins.toolbar,
+  appBarSpacer: {
+    ...theme.mixins.toolbar,
+    flex: '0 1 56px'
+  },
   content: {
     flexGrow: 1,
-    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    // height: '100vh',
     overflow: 'auto',
   },
   container: {
+    flex: '1 1 auto',
+    overflow: 'scroll',
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'column',
   },
   paper: {
     padding: theme.spacing(2),
@@ -150,13 +171,28 @@ const useStyles = makeStyles((theme) => ({
   fixedHeight: {
     height: 340,
   },
+  footer: {
+    marginTop: 'auto',
+  }
 }))
+
+const country = (hut: any) => {
+  const countryCode = hut.countryCode.toLowerCase()
+  if (countryCode === 'de') return '🇩🇪'
+  if (countryCode === 'ch') return '🇨🇭'
+  if (countryCode === 'at') return '🇦🇹'
+  if (countryCode === 'si') return '🇸🇰'
+  return 'n/a'
+}
+
+type HutDisplayMode = 'list' | 'map'
 
 function App() {
   const theme = useTheme();
   const matchesMediaQuery = useMediaQuery(theme.breakpoints.down('sm'));
   console.log('matchesMediaQuery', matchesMediaQuery)
   const classes = useStyles()
+  const [ hutDisplayMode, setHutDisplayMode ] = useState<HutDisplayMode>('list')
   const [open, setOpen] = React.useState(true)
   const handleDrawerOpen = () => {
     console.log('setting open to', !open)
@@ -283,9 +319,98 @@ function App() {
     }
   }
 
+  const changeHutDisplayMode = (targetMode: HutDisplayMode) => {
+    return () => setHutDisplayMode(targetMode)
+  }
+
+  const mainRef: any = React.createRef()
+  const [ showSubtitle, setShowSubtitle ] = useState(false) 
+  const onMainScroll = () => {
+    if (mainRef.current.scrollTop > 60 && !showSubtitle) {
+      setShowSubtitle(true)
+    } else if (mainRef.current.scrollTop <= 60 && showSubtitle) {
+      setShowSubtitle(false)
+    }
+  }
+
+  const [ modalOpen, setModalOpen ] = useState(false)
+  const handleFilter = () => {
+    setModalOpen(true)
+  }
+  const handleModalClose = () => {
+    setModalOpen(false)
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
+      <Modal open={modalOpen} onClose={handleModalClose}>
+        <Fade in={modalOpen}>
+          <Container maxWidth="md">
+            <Paper className={classes.paper}>
+              <Typography component="h2" variant="h6" color="primary" gutterBottom>
+                Filter
+              </Typography>
+              <Grid container spacing={3}>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FormControl component="fieldset">
+                    <FormLabel component="legend">Countries</FormLabel>
+                    <FormGroup>
+                    {countryCodeFilters.map(it =>
+                      <FormControlLabel
+                        control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
+                        label={it.label}
+                      />
+                    )}
+                    </FormGroup>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FormControl component="fieldset">
+                    <FormLabel component="legend">Elevation</FormLabel>
+                    <FormGroup>
+                    {elevationFilters.map(it =>
+                      <TextField
+                        label={it.label}
+                        onChange={updateElevation(it)}
+                        InputProps={{
+                          endAdornment: <InputAdornment position="end">m</InputAdornment>,
+                        }}
+                      />
+                    )}
+                    </FormGroup>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FormControl component="fieldset">
+                    <FormLabel component="legend">Availability</FormLabel>
+                    <FormGroup>
+                    <MuiPickersUtilsProvider utils={MomentUtils}>
+                      <KeyboardDatePicker
+                        disableToolbar
+                        autoOk={true}
+                        variant="inline"
+                        format="DD.MM.YYYY"
+                        margin="normal"
+                        label="Date"
+                        value={reservationDateFilter.value}
+                        onChange={handleOpen(reservationDateFilter)}
+                        // KeyboardButtonProps={{
+                        //   'aria-label': 'change date',
+                        // }}
+                      />
+                    </MuiPickersUtilsProvider>
+                    <TextField
+                      label={freeRoomFilter.label}
+                      onChange={updateFreeRoom(freeRoomFilter)} />
+                    </FormGroup>
+                  </FormControl>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Container>
+        </Fade>
+      </Modal>
       <AppBar position="absolute" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <IconButton
@@ -299,142 +424,43 @@ function App() {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Open Alpine Data
+            Open Alpine Data {showSubtitle ? `- Huts (${huts.length})` : ''}
           </Typography>
-          {/* <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton> */}
+          <IconButton onClick={handleFilter} color="inherit">
+            <FilterListIcon />
+          </IconButton>
+          {hutDisplayMode === 'list'
+            ? <IconButton onClick={changeHutDisplayMode('map')} color="inherit">
+                <MapIcon />
+              </IconButton>
+            : <IconButton onClick={changeHutDisplayMode('list')} color="inherit">
+                <ListIcon />
+              </IconButton>
+          }
         </Toolbar>
       </AppBar>
-      <Drawer
-        variant="permanent"
-        classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
-        }}
-        open={open}
-      >
-        <div className={classes.appBarSpacer} />
-        <List>
-        <div>
-          <ListItem button>
-            <ListItemIcon>
-              {/* <FontAwesomeIcon icon={coffeeIconDefinition} /> */}
-              {/* <NotificationsIcon /> */}
-              <FontAwesomeIcon icon="home"size="2x" />
-              {/* <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="circle" color="green" size="2x" />
-                <FontAwesomeIcon icon="home" inverse transform="shrink-8" size="2x" />
-              </span> */}
-            </ListItemIcon>
-            <ListItemText>Home</ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon>
-              {/* <FontAwesomeIcon icon={["fas", "coffee"]} /> */}
-              {/* <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="square" color="green" />
-                <FontAwesomeIcon icon="check" inverse transform="shrink-6" />
-              </span> */}
-              <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="circle" color="green" size="2x" />
-                <FontAwesomeIcon icon="flag" inverse transform="shrink-8" size="2x" />
-              </span>
-              {/* <NotificationsIcon /> */}
-              {/* <Icon className="fa fa-shoe-prints" /> */}
-            </ListItemIcon>
-            <ListItemText>Trips</ListItemText>
-          </ListItem>
-        </div>
-        </List>
-      </Drawer>
-      <main className={classes.content}>
+      <main className={classes.content} onScroll={onMainScroll} ref={mainRef}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
           <Typography component="h2" variant="h5" color="primary" gutterBottom>
-            Find a Hut
+            Huts ({huts.length})
           </Typography>
-          <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                  Filter
-                </Typography>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Countries</FormLabel>
-                      <FormGroup>
-                      {countryCodeFilters.map(it =>
-                        <FormControlLabel
-                          control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
-                          label={it.label}
-                        />
-                      )}
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Elevation</FormLabel>
-                      <FormGroup>
-                      {elevationFilters.map(it =>
-                        <TextField
-                          label={it.label}
-                          onChange={updateElevation(it)}
-                          InputProps={{
-                            endAdornment: <InputAdornment position="end">m</InputAdornment>,
-                          }}
-                        />
-                      )}
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4}>
-                    <FormControl component="fieldset">
-                      <FormLabel component="legend">Availability</FormLabel>
-                      <FormGroup>
-                      <MuiPickersUtilsProvider utils={MomentUtils}>
-                        <KeyboardDatePicker
-                          disableToolbar
-                          autoOk={true}
-                          variant="inline"
-                          format="DD.MM.YYYY"
-                          margin="normal"
-                          label="Date"
-                          value={reservationDateFilter.value}
-                          onChange={handleOpen(reservationDateFilter)}
-                          // KeyboardButtonProps={{
-                          //   'aria-label': 'change date',
-                          // }}
-                        />
-                      </MuiPickersUtilsProvider>
-                      <TextField
-                        label={freeRoomFilter.label}
-                        onChange={updateFreeRoom(freeRoomFilter)} />
-                      </FormGroup>
-                    </FormControl>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Grid>
-            {/* Recent Orders */}
-            <Grid item xs={12}>
-              {/* <Paper className={classes.paper}> */}
-              <Paper className={classes.paper}>
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                  Huts ({huts.length})
-                </Typography>
-                <TabbedHutList huts={huts}/>
-                {/* <div style={{ display: 'flex', height: '500px' }}>
-                  <div style={{ flexGrow: 1 }}>
-                  </div>
-                </div> */}
-              </Paper>
-            </Grid>
-          </Grid>
+          {hutDisplayMode === 'list'
+            ? <List>
+                <div>
+                {huts.map((hut: any) =>
+                <ListItem divider={true}>
+                  <ListItemText primary={hut.name} secondary={`${country(hut)} ${hut.elevation} m`} />
+                </ListItem>
+                )}
+                </div>
+              </List>
+            : <div style={{ display: 'flex', flex: '1 1 auto' }}>
+                <div style={{ flexGrow: 1 }}>
+                  <HutMap huts={huts} />
+                </div>
+              </div>
+          }
           <Box pt={4}>
             Data last updated <time dateTime={hutsUpdatedAt.toISOString()} title={hutsUpdatedAt.format()}>{hutsUpdatedAt.fromNow()}</time>
           </Box>
