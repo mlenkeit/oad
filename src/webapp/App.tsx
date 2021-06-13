@@ -20,6 +20,7 @@ import Paper from '@material-ui/core/Paper';
 // import Link from '@material-ui/core/Link';
 // import Icon from '@material-ui/core/Icon';
 import MenuIcon from '@material-ui/icons/Menu';
+import RestoreIcon from '@material-ui/icons/Restore';
 // import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 // import NotificationsIcon from '@material-ui/icons/Notifications';
 import ListItem from '@material-ui/core/ListItem';
@@ -35,6 +36,8 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import TabbedHutList from './components/TabbedHutList'
 import moment from 'moment'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import MomentUtils from '@date-io/moment';
 import {
@@ -70,6 +73,8 @@ const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
@@ -134,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
   appBarSpacer: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
-    height: '100vh',
+    // height: '100vh',
     overflow: 'auto',
   },
   container: {
@@ -150,6 +155,9 @@ const useStyles = makeStyles((theme) => ({
   fixedHeight: {
     height: 340,
   },
+  footer: {
+    marginTop: 'auto',
+  }
 }))
 
 function App() {
@@ -308,47 +316,6 @@ function App() {
           </IconButton> */}
         </Toolbar>
       </AppBar>
-      <Drawer
-        variant="permanent"
-        classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
-        }}
-        open={open}
-      >
-        <div className={classes.appBarSpacer} />
-        <List>
-        <div>
-          <ListItem button>
-            <ListItemIcon>
-              {/* <FontAwesomeIcon icon={coffeeIconDefinition} /> */}
-              {/* <NotificationsIcon /> */}
-              <FontAwesomeIcon icon="home"size="2x" />
-              {/* <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="circle" color="green" size="2x" />
-                <FontAwesomeIcon icon="home" inverse transform="shrink-8" size="2x" />
-              </span> */}
-            </ListItemIcon>
-            <ListItemText>Home</ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon>
-              {/* <FontAwesomeIcon icon={["fas", "coffee"]} /> */}
-              {/* <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="square" color="green" />
-                <FontAwesomeIcon icon="check" inverse transform="shrink-6" />
-              </span> */}
-              <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon="circle" color="green" size="2x" />
-                <FontAwesomeIcon icon="flag" inverse transform="shrink-8" size="2x" />
-              </span>
-              {/* <NotificationsIcon /> */}
-              {/* <Icon className="fa fa-shoe-prints" /> */}
-            </ListItemIcon>
-            <ListItemText>Trips</ListItemText>
-          </ListItem>
-        </div>
-        </List>
-      </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
@@ -440,6 +407,13 @@ function App() {
           </Box>
         </Container>
       </main>
+      <footer className={classes.footer}>
+        <BottomNavigation
+          showLabels
+        >
+          <BottomNavigationAction label="Huts"  icon={<RestoreIcon />} />
+        </BottomNavigation>
+      </footer>
     </div>
   )
 }
