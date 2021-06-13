@@ -373,6 +373,7 @@ function App() {
                       <TextField
                         label={it.label}
                         onChange={updateElevation(it)}
+                        value={it.value ? it.value : ''}
                         InputProps={{
                           endAdornment: <InputAdornment position="end">m</InputAdornment>,
                         }}
@@ -402,6 +403,7 @@ function App() {
                     </MuiPickersUtilsProvider>
                     <TextField
                       label={freeRoomFilter.label}
+                      value={freeRoomFilter.value ? freeRoomFilter.value : ''}
                       onChange={updateFreeRoom(freeRoomFilter)} />
                     </FormGroup>
                   </FormControl>
