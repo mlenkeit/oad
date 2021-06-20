@@ -2,7 +2,7 @@
 import './App.css';
 
 import React, { useState, useEffect } from 'react'
-// import clsx from 'clsx'
+import clsx from 'clsx'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline';
 // import Drawer from '@material-ui/core/Drawer';
@@ -173,6 +173,15 @@ const useStyles = makeStyles((theme) => ({
   },
   footer: {
     marginTop: 'auto',
+  },
+  filterContainer: {
+    height: '100vh',
+    display: 'flex',
+    alignItems: 'center'
+  },
+  filterPaper: {
+    height: '95%',
+    width: '100%'
   }
 }))
 
@@ -333,7 +342,7 @@ function App() {
     }
   }
 
-  const [ modalOpen, setModalOpen ] = useState(false)
+  const [ modalOpen, setModalOpen ] = useState(true)
   const handleFilter = () => {
     setModalOpen(true)
   }
@@ -346,8 +355,8 @@ function App() {
       <CssBaseline />
       <Modal open={modalOpen} onClose={handleModalClose}>
         <Fade in={modalOpen}>
-          <Container maxWidth="md">
-            <Paper className={classes.paper}>
+          <Container maxWidth="md" className={classes.filterContainer}>
+            <Paper className={clsx(classes.paper, classes.filterPaper)}>
               <Typography component="h2" variant="h6" color="primary" gutterBottom>
                 Filter
               </Typography>
