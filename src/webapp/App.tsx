@@ -508,7 +508,7 @@ function App() {
       </Drawer>
       <main className={classes.content} onScroll={onMainScroll} ref={mainRef}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="xl" className={classes.container}>
+        <Container maxWidth={hutDisplayMode === 'list' ? 'md' : 'xl'} className={classes.container}>
           <Typography component="h2" variant="h5" color="primary" gutterBottom>
             Huts ({huts.length})
           </Typography>
@@ -518,6 +518,8 @@ function App() {
                 {huts.map((hut: any) =>
                 <ListItem divider={true}>
                   <ListItemText primary={hut.name} secondary={`${country(hut)} ${hut.elevation} m`} />
+                  {/* <ListItemText>Hello List ITem</ListItemText>
+                  <ListItemText>Hello List ITem</ListItemText> */}
                 </ListItem>
                 )}
                 </div>
