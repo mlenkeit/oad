@@ -80,7 +80,7 @@ const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row-reverse',
     height: '100vh',
   },
   toolbar: {
@@ -161,6 +161,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(4),
     display: 'flex',
     flexDirection: 'column',
+    flexGrow: 1,
   },
   paper: {
     padding: theme.spacing(2),
@@ -183,8 +184,46 @@ const useStyles = makeStyles((theme) => ({
     height: '95%',
     width: '100%'
   },
+  filterDrawer: {
+    [theme.breakpoints.up('sm')]: {
+      transition: theme.transitions.create('width', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      width: '300px',
+      flexShrink: 0,
+    }
+  },
+  filterDrawerClose: {
+    [theme.breakpoints.up('sm')]: {
+      transition: theme.transitions.create('width', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.leavingScreen,
+      }),
+      width: 0
+    }
+  },
   filterDrawerPaper: {
-    width: '85%'
+    [theme.breakpoints.down('sm')]: {
+      width: '85%'
+    },
+    [theme.breakpoints.up('sm')]: {
+      transition: theme.transitions.create('right', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      width: '300px'
+    }
+  },
+  filterDrawerPaperClose: {
+    [theme.breakpoints.up('sm')]: {
+      transition: theme.transitions.create('right', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.leavingScreen,
+      }),
+      overflowX: 'hidden',
+      right: '-300px'
+    }
   }
 }))
 
@@ -201,6 +240,7 @@ type HutDisplayMode = 'list' | 'map'
 
 function App() {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const matchesMediaQuery = useMediaQuery(theme.breakpoints.down('sm'));
   console.log('matchesMediaQuery', matchesMediaQuery)
   const classes = useStyles()
@@ -345,9 +385,9 @@ function App() {
     }
   }
 
-  const [ showFilters, setShowFilters ] = useState(false)
+  const [ showFilters, setShowFilters ] = useState(true)
   const handleFilterButtonClick = () => {
-    setShowFilters(true)
+    setShowFilters(!showFilters)
   }
   const handleFilterDrawerClose = () => {
     setShowFilters(false)
@@ -356,76 +396,6 @@ function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Drawer 
-        open={showFilters} 
-        onClose={handleFilterDrawerClose} 
-        anchor="right"
-        classes={{
-          paper: clsx(classes.paper, classes.filterDrawerPaper),
-        }}
-      >
-        <Typography component="h2" variant="h6" color="primary" gutterBottom>
-          Filter
-        </Typography>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={4}>
-            <FormControl component="fieldset">
-              <FormLabel component="legend">Countries</FormLabel>
-              <FormGroup>
-              {countryCodeFilters.map(it =>
-                <FormControlLabel
-                  control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
-                  label={it.label}
-                />
-              )}
-              </FormGroup>
-            </FormControl>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <FormControl component="fieldset">
-              <FormLabel component="legend">Elevation</FormLabel>
-              <FormGroup>
-              {elevationFilters.map(it =>
-                <TextField
-                  label={it.label}
-                  onChange={updateElevation(it)}
-                  value={it.value ? it.value : ''}
-                  InputProps={{
-                    endAdornment: <InputAdornment position="end">m</InputAdornment>,
-                  }}
-                />
-              )}
-              </FormGroup>
-            </FormControl>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <FormControl component="fieldset">
-              <FormLabel component="legend">Availability</FormLabel>
-              <FormGroup>
-              <MuiPickersUtilsProvider utils={MomentUtils}>
-                <KeyboardDatePicker
-                  disableToolbar
-                  autoOk={true}
-                  variant="inline"
-                  format="DD.MM.YYYY"
-                  margin="normal"
-                  label="Date"
-                  value={reservationDateFilter.value}
-                  onChange={handleOpen(reservationDateFilter)}
-                  // KeyboardButtonProps={{
-                  //   'aria-label': 'change date',
-                  // }}
-                />
-              </MuiPickersUtilsProvider>
-              <TextField
-                label={freeRoomFilter.label}
-                value={freeRoomFilter.value ? freeRoomFilter.value : ''}
-                onChange={updateFreeRoom(freeRoomFilter)} />
-              </FormGroup>
-            </FormControl>
-          </Grid>
-        </Grid>
-      </Drawer>
       {/* <Modal open={false}>
         <Fade in={showFilters}>
           <Container maxWidth="md" className={classes.filterContainer}>
@@ -463,6 +433,79 @@ function App() {
           }
         </Toolbar>
       </AppBar>
+      <Drawer 
+        open={showFilters} 
+        onClose={handleFilterDrawerClose} 
+        anchor="right"
+        variant={isMobile ? 'temporary' : 'permanent'}
+        className={clsx(classes.filterDrawer, !showFilters && classes.filterDrawerClose)}
+        classes={{
+          paper: clsx(classes.paper, classes.filterDrawerPaper, !showFilters && classes.filterDrawerPaperClose),
+        }}
+      >
+        <div className={!isMobile ? classes.appBarSpacer : ''} />
+        <Typography component="h2" variant="h6" color="primary" gutterBottom>
+          Filter
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Countries</FormLabel>
+              <FormGroup>
+              {countryCodeFilters.map(it =>
+                <FormControlLabel
+                  control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
+                  label={it.label}
+                />
+              )}
+              </FormGroup>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Elevation</FormLabel>
+              <FormGroup>
+              {elevationFilters.map(it =>
+                <TextField
+                  label={it.label}
+                  onChange={updateElevation(it)}
+                  value={it.value ? it.value : ''}
+                  InputProps={{
+                    endAdornment: <InputAdornment position="end">m</InputAdornment>,
+                  }}
+                />
+              )}
+              </FormGroup>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Availability</FormLabel>
+              <FormGroup>
+              <MuiPickersUtilsProvider utils={MomentUtils}>
+                <KeyboardDatePicker
+                  disableToolbar
+                  autoOk={true}
+                  variant="inline"
+                  format="DD.MM.YYYY"
+                  margin="normal"
+                  label="Date"
+                  value={reservationDateFilter.value}
+                  onChange={handleOpen(reservationDateFilter)}
+                  // KeyboardButtonProps={{
+                  //   'aria-label': 'change date',
+                  // }}
+                />
+              </MuiPickersUtilsProvider>
+              <TextField
+                label={freeRoomFilter.label}
+                value={freeRoomFilter.value ? freeRoomFilter.value : ''}
+                onChange={updateFreeRoom(freeRoomFilter)} />
+              </FormGroup>
+            </FormControl>
+          </Grid>
+        </Grid>
+      </Drawer>
       <main className={classes.content} onScroll={onMainScroll} ref={mainRef}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
