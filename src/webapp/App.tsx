@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react'
 import clsx from 'clsx'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline';
-// import Drawer from '@material-ui/core/Drawer';
+import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -16,7 +16,7 @@ import IconButton from '@material-ui/core/IconButton';
 // import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 // import Link from '@material-ui/core/Link';
 // import Icon from '@material-ui/core/Icon';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -36,8 +36,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import Modal from '@material-ui/core/Modal';
-import Fade from '@material-ui/core/Fade';
+// import Modal from '@material-ui/core/Modal';
+// import Fade from '@material-ui/core/Fade';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 // import TabbedHutList from './components/TabbedHutList'
 import HutMap from './components/HutMap'
@@ -182,6 +182,9 @@ const useStyles = makeStyles((theme) => ({
   filterPaper: {
     height: '95%',
     width: '100%'
+  },
+  filterDrawerPaper: {
+    width: '85%'
   }
 }))
 
@@ -342,86 +345,96 @@ function App() {
     }
   }
 
-  const [ modalOpen, setModalOpen ] = useState(true)
-  const handleFilter = () => {
-    setModalOpen(true)
+  const [ showFilters, setShowFilters ] = useState(false)
+  const handleFilterButtonClick = () => {
+    setShowFilters(true)
   }
-  const handleModalClose = () => {
-    setModalOpen(false)
+  const handleFilterDrawerClose = () => {
+    setShowFilters(false)
   }
 
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Modal open={modalOpen} onClose={handleModalClose}>
-        <Fade in={modalOpen}>
+      <Drawer 
+        open={showFilters} 
+        onClose={handleFilterDrawerClose} 
+        anchor="right"
+        classes={{
+          paper: clsx(classes.paper, classes.filterDrawerPaper),
+        }}
+      >
+        <Typography component="h2" variant="h6" color="primary" gutterBottom>
+          Filter
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} md={4}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Countries</FormLabel>
+              <FormGroup>
+              {countryCodeFilters.map(it =>
+                <FormControlLabel
+                  control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
+                  label={it.label}
+                />
+              )}
+              </FormGroup>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Elevation</FormLabel>
+              <FormGroup>
+              {elevationFilters.map(it =>
+                <TextField
+                  label={it.label}
+                  onChange={updateElevation(it)}
+                  value={it.value ? it.value : ''}
+                  InputProps={{
+                    endAdornment: <InputAdornment position="end">m</InputAdornment>,
+                  }}
+                />
+              )}
+              </FormGroup>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">Availability</FormLabel>
+              <FormGroup>
+              <MuiPickersUtilsProvider utils={MomentUtils}>
+                <KeyboardDatePicker
+                  disableToolbar
+                  autoOk={true}
+                  variant="inline"
+                  format="DD.MM.YYYY"
+                  margin="normal"
+                  label="Date"
+                  value={reservationDateFilter.value}
+                  onChange={handleOpen(reservationDateFilter)}
+                  // KeyboardButtonProps={{
+                  //   'aria-label': 'change date',
+                  // }}
+                />
+              </MuiPickersUtilsProvider>
+              <TextField
+                label={freeRoomFilter.label}
+                value={freeRoomFilter.value ? freeRoomFilter.value : ''}
+                onChange={updateFreeRoom(freeRoomFilter)} />
+              </FormGroup>
+            </FormControl>
+          </Grid>
+        </Grid>
+      </Drawer>
+      {/* <Modal open={false}>
+        <Fade in={showFilters}>
           <Container maxWidth="md" className={classes.filterContainer}>
             <Paper className={clsx(classes.paper, classes.filterPaper)}>
-              <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                Filter
-              </Typography>
-              <Grid container spacing={3}>
-                <Grid item xs={12} sm={6} md={4}>
-                  <FormControl component="fieldset">
-                    <FormLabel component="legend">Countries</FormLabel>
-                    <FormGroup>
-                    {countryCodeFilters.map(it =>
-                      <FormControlLabel
-                        control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
-                        label={it.label}
-                      />
-                    )}
-                    </FormGroup>
-                  </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                  <FormControl component="fieldset">
-                    <FormLabel component="legend">Elevation</FormLabel>
-                    <FormGroup>
-                    {elevationFilters.map(it =>
-                      <TextField
-                        label={it.label}
-                        onChange={updateElevation(it)}
-                        value={it.value ? it.value : ''}
-                        InputProps={{
-                          endAdornment: <InputAdornment position="end">m</InputAdornment>,
-                        }}
-                      />
-                    )}
-                    </FormGroup>
-                  </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                  <FormControl component="fieldset">
-                    <FormLabel component="legend">Availability</FormLabel>
-                    <FormGroup>
-                    <MuiPickersUtilsProvider utils={MomentUtils}>
-                      <KeyboardDatePicker
-                        disableToolbar
-                        autoOk={true}
-                        variant="inline"
-                        format="DD.MM.YYYY"
-                        margin="normal"
-                        label="Date"
-                        value={reservationDateFilter.value}
-                        onChange={handleOpen(reservationDateFilter)}
-                        // KeyboardButtonProps={{
-                        //   'aria-label': 'change date',
-                        // }}
-                      />
-                    </MuiPickersUtilsProvider>
-                    <TextField
-                      label={freeRoomFilter.label}
-                      value={freeRoomFilter.value ? freeRoomFilter.value : ''}
-                      onChange={updateFreeRoom(freeRoomFilter)} />
-                    </FormGroup>
-                  </FormControl>
-                </Grid>
-              </Grid>
+              
             </Paper>
           </Container>
         </Fade>
-      </Modal>
+      </Modal> */}
       <AppBar position="absolute" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <IconButton
@@ -437,7 +450,7 @@ function App() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Open Alpine Data {showSubtitle ? `- Huts (${huts.length})` : ''}
           </Typography>
-          <IconButton onClick={handleFilter} color="inherit">
+          <IconButton onClick={handleFilterButtonClick} color="inherit">
             <FilterListIcon />
           </IconButton>
           {hutDisplayMode === 'list'
