@@ -385,7 +385,7 @@ function App() {
     }
   }
 
-  const [ showFilters, setShowFilters ] = useState(true)
+  const [ showFilters, setShowFilters ] = useState(false)
   const handleFilterButtonClick = () => {
     setShowFilters(!showFilters)
   }
