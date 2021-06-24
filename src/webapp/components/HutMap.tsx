@@ -32,7 +32,7 @@ const HutMap = (props: any) => {
       />
       {huts.map((hut: Hut, index: any) =>
         <Marker
-          key={index}
+          key={hut.id}
           position={[hut.coordinates?.latitude, hut.coordinates?.longitude] as LatLngExpression}
         >
           <Popup>
