@@ -156,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     flex: '1 1 auto',
-    overflow: 'scroll',
+    overflow: 'auto',
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
     display: 'flex',
