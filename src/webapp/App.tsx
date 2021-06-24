@@ -241,8 +241,8 @@ type HutDisplayMode = 'list' | 'map'
 function App() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
-  const matchesMediaQuery = useMediaQuery(theme.breakpoints.down('sm'));
-  console.log('matchesMediaQuery', matchesMediaQuery)
+  // const matchesMediaQuery = useMediaQuery(theme.breakpoints.down('sm'));
+  // console.log('matchesMediaQuery', matchesMediaQuery)
   const classes = useStyles()
   const [ hutDisplayMode, setHutDisplayMode ] = useState<HutDisplayMode>('list')
   const [open, setOpen] = React.useState(true)
@@ -288,7 +288,6 @@ function App() {
   
   useEffect(() => {
     const fetchHuts = async () => {
-      console.log('reservationDateFilter', reservationDateFilter)
       setHutsUpdatedAt(hutRepo.getUpdatedAt())
       const allHuts = await hutRepo.getAll().apply()
       // const filteredHuts = await transformHutArray(allHuts, transformations
@@ -318,11 +317,10 @@ function App() {
   const toggleCountryCode = (item: any) => {
     return (evt: any) => {
       setCountryCodeFilters(countryCodeFilters.map(it => {
-        const copy = { ...it }
-        if (copy.label === item.label) {
-          copy.active = !item.active
+        if (it.label === item.label) {
+          it.active = !it.active
         }
-        return copy
+        return it
       }))
     }
   }
@@ -332,22 +330,20 @@ function App() {
       const value = evt.target.value
       if (!!value) {
         setElevationFilters(elevationFilters.map(it => {
-          const copy = { ...it }
-          if (copy.label === item.label) {
+          if (it.label === item.label) {
             // @ts-ignore
-            copy.value = parseInt(value)
-            copy.active = true
+            it.value = parseInt(value)
+            it.active = true
           }
-          return copy
+          return it
         }))
       } else {
         setElevationFilters(elevationFilters.map(it => {
-          const copy = { ...it }
-          if (copy.label === item.label) {
-            delete item.value
-            copy.active = false
+          if (it.label === item.label) {
+            item.value = null
+            it.active = false
           }
-          return copy
+          return it
         }))
       }
     }
@@ -355,19 +351,17 @@ function App() {
   const updateFreeRoom = (item: any) => {
     return (evt: any) => {
       const value = evt.target.value
-      const copy = { ...item }
-      if (!!value) copy.value = parseInt(value)
+      if (!!value) item.value = parseInt(value)
       else item.value = null
-      setFreeRoomFilter(copy)
+      setFreeRoomFilter(item)
     }
   }
 
-  const handleOpen = (it: any) => {
+  const handleOpen = (item: any) => {
     return (openAt: any) => {
       console.log(openAt)
-      const copy = { ...it }
-      copy.value = openAt
-      setReservationDateFilter(copy)
+      item.value = openAt
+      setReservationDateFilter(item)
     }
   }
 
@@ -474,7 +468,7 @@ function App() {
                     endAdornment: <InputAdornment position="end">m</InputAdornment>,
                   }}
                 />
-              )}
+                )}
               </FormGroup>
             </FormControl>
           </Grid>
