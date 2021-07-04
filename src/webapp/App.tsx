@@ -301,7 +301,7 @@ function App() {
         hutTx.allOf(...elevationFilters
           .filter(it => it.active === true)
           .map(it => it.tx((it.value as unknown) as number))),
-        ...(reservationDateFilter.value !== null && freeRoomFilter !== null
+        ...(reservationDateFilter.value !== null && freeRoomFilter.value !== null
           ? [hutTx.joinReservations(await reservationRepo.getAll().apply(), [
               reservationTx.rejectClosed(),
               reservationTx.filterByDate((reservationDateFilter.value as unknown) as any),
@@ -353,15 +353,14 @@ function App() {
       const value = evt.target.value
       if (!!value) item.value = parseInt(value)
       else item.value = null
-      setFreeRoomFilter(item)
+      setFreeRoomFilter({ ...item })
     }
   }
 
   const handleOpen = (item: any) => {
     return (openAt: any) => {
-      console.log(openAt)
       item.value = openAt
-      setReservationDateFilter(item)
+      setReservationDateFilter({ ...item })
     }
   }
 
@@ -449,6 +448,7 @@ function App() {
               {countryCodeFilters.map(it =>
                 <FormControlLabel
                   control={<Checkbox checked={it.active} name={it.label} onChange={toggleCountryCode(it)} />}
+                  key={it.label}
                   label={it.label}
                 />
               )}
@@ -461,6 +461,7 @@ function App() {
               <FormGroup>
               {elevationFilters.map(it =>
                 <TextField
+                  key={it.label}
                   label={it.label}
                   onChange={updateElevation(it)}
                   value={it.value ? it.value : ''}
@@ -492,6 +493,7 @@ function App() {
                 />
               </MuiPickersUtilsProvider>
               <TextField
+                id={freeRoomFilter.label}
                 label={freeRoomFilter.label}
                 value={freeRoomFilter.value ? freeRoomFilter.value : ''}
                 onChange={updateFreeRoom(freeRoomFilter)} />
@@ -510,7 +512,7 @@ function App() {
             ? <List>
                 <div>
                 {huts.map((hut: any) =>
-                <ListItem divider={true}>
+                <ListItem key={hut.id} divider={true}>
                   <ListItemText primary={hut.name} secondary={`${country(hut)} ${hut.elevation} m`} />
                   {/* <ListItemText>Hello List ITem</ListItemText>
                   <ListItemText>Hello List ITem</ListItemText> */}
