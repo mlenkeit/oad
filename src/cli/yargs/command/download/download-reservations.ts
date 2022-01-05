@@ -30,9 +30,9 @@ export default (): yargs.CommandModule => {
       })
 
       // @ts-ignore
-      const from = moment('2021-05-15')
+      const from = moment('2022-01-01')
       // @ts-ignore
-      const to = moment('2021-12-31')
+      const to = moment('2022-12-31')
 
       await async.eachOfLimit(hutIds as HutId[], 5, async (hutId) => {
         const result = await alpsonlineClient.getReservations({
