@@ -3,6 +3,7 @@ name: Update data from alpsonline.org
 on:
   schedule:
     - cron: '0 4 * * *'
+  workflow_dispatch:
   # push:
   #   branches: [ main ]
 
